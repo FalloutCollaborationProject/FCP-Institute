@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Pawnkinds __________-->
+
+    <!--___ Base Definitions ___-->
+
+    <PawnKindDef Name="FCP_InstituteKindBase" Abstract="true">
+        <race>Human</race>
+        <defaultFactionType>FCP_Faction_Institute</defaultFactionType>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>0.9~1.0</gearHealthRange>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <combatPower>90</combatPower>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>55</maxGenerationAge>
+        <apparelMoney>500~800</apparelMoney>
+        <weaponMoney>500~900</weaponMoney>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <!-- Institute Security (generic member) -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Pawnkind_Institute_Security</defName>
+        <label>Institute security</label>
+        <combatPower>110</combatPower>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponMoney>700~1100</weaponMoney>
+    </PawnKindDef>
+
+</Defs>

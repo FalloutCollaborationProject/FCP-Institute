@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Character Backstories __________-->
+
+    <!-- Father (Shaun) -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Father_Child</defName>
+        <title>Institute-Raised</title>
+        <titleShort>Institute-Raised</titleShort>
+        <baseDesc>[PAWN_nameDef] was raised entirely within the Institute, educated by its best instructors and shielded from the surface [PAWN_pronoun] was told wasn't worth seeing. [PAWN_pronoun] absorbed its priorities before [PAWN_pronoun] was old enough to question them.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Father_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Father_Adult</defName>
+        <title>Director of the Institute</title>
+        <titleShort>Director</titleShort>
+        <baseDesc>[PAWN_nameDef] holds the Institute's highest office, weighing every division head's proposal against a single standard: does it move the organization's work forward. [PAWN_pronoun] frames every decision, including the difficult ones, as necessary progress rather than choice.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Father_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Social>6</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Dr. Madison Li -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_MadisonLi_Child</defName>
+        <title>Prodigy Engineer</title>
+        <titleShort>Prodigy</titleShort>
+        <baseDesc>[PAWN_nameDef] showed an aptitude for reactor design and applied physics well ahead of [PAWN_possessive] peers, and the Institute's instructors made sure that aptitude was put to use immediately.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_MadisonLi_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_MadisonLi_Adult</defName>
+        <title>Head of Advanced Systems</title>
+        <titleShort>Advanced Systems</titleShort>
+        <baseDesc>[PAWN_nameDef] runs Advanced Systems, overseeing the Institute's reactor and synth-chassis research with an exactness that leaves little tolerance for error. [PAWN_pronoun] left a promising career on the surface for the certainty of unlimited resources and no oversight but [PAWN_possessive] own.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_MadisonLi_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>9</Intellectual>
+            <Crafting>6</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Justin Ayo -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_JustinAyo_Child</defName>
+        <title>Security Track Recruit</title>
+        <titleShort>Recruit</titleShort>
+        <baseDesc>[PAWN_nameDef] was selected early for the Institute's internal security track, trained to treat containment breaches and surface leaks as the same category of problem: solvable, given the right procedure.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_JustinAyo_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_JustinAyo_Adult</defName>
+        <title>Head of the Synth Retention Bureau</title>
+        <titleShort>SRB Chief</titleShort>
+        <baseDesc>[PAWN_nameDef] runs the Synth Retention Bureau and functions as the Institute's closest thing to a military commander, authorizing courser deployments to retrieve or eliminate synths that stop following orders. [PAWN_pronoun] treats every escaped unit as an open file, not a person.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_JustinAyo_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Intellectual>6</Intellectual>
+            <Social>3</Social>
+        </skillGains>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Alana Secord -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_AlanaSecord_Child</defName>
+        <title>SRB Cadet</title>
+        <titleShort>Cadet</titleShort>
+        <baseDesc>[PAWN_nameDef] trained under the Synth Retention Bureau's field program, learning to run surface retrieval operations with minimal exposure and minimal questions asked afterward.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_AlanaSecord_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_AlanaSecord_Adult</defName>
+        <title>SRB Field Officer</title>
+        <titleShort>Field Officer</titleShort>
+        <baseDesc>[PAWN_nameDef] handles the Synth Retention Bureau's surface recovery operations, coordinating courser teams and reporting directly to Ayo. [PAWN_pronoun] spends more time above ground than almost anyone else in the Institute and trusts the surface for it even less than [PAWN_possessive] superiors do.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_AlanaSecord_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Social>3</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Dr. Clayton Holdren -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_ClaytonHoldren_Child</defName>
+        <title>Bioscience Track Student</title>
+        <titleShort>Student</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized early in the Institute's biological sciences curriculum, drawn to questions of adaptation and survival that the surface answered the hard way and the Institute preferred to answer in a controlled setting.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_ClaytonHoldren_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_ClaytonHoldren_Adult</defName>
+        <title>Head of BioScience</title>
+        <titleShort>BioScience</titleShort>
+        <baseDesc>[PAWN_nameDef] leads BioScience, overseeing research into radiation resistance, FEV, and biological weapons applications with the same procedural detachment [PAWN_pronoun] brings to everything else. Colleagues describe [PAWN_objective] as thorough. None describe [PAWN_objective] as warm.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_ClaytonHoldren_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Medicine>6</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Alan Binet -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_AlanBinet_Child</defName>
+        <title>Robotics Track Apprentice</title>
+        <titleShort>Apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] apprenticed in the Institute's robotics division, working through chassis designs and synthetic musculature schematics years before [PAWN_pronoun] was permitted anywhere near a live unit.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_AlanBinet_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_AlanBinet_Adult</defName>
+        <title>Head of Robotics</title>
+        <titleShort>Robotics</titleShort>
+        <baseDesc>[PAWN_nameDef] leads the Robotics division and is credited within the Institute as the principal architect of the third-generation synth line. [PAWN_pronoun] speaks about the units [PAWN_pronoun] designed the way an engineer speaks about a bridge - proud of the specifications, uninterested in whether the bridge has opinions.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_AlanBinet_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>8</Crafting>
+            <Intellectual>7</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+</Defs>

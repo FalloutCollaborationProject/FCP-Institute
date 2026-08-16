@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Factions __________-->
+
+    <!-- The Institute -->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Institute</defName>
+        <label>The Institute</label>
+        <description>The Institute is what remains of the old world's scientific establishment, operating from a hidden facility beneath the Commonwealth and observing the surface through synthetic proxies it rarely acknowledges building. Its researchers view the wasteland above as a data set, not a home, and its policy toward outsiders is dictated by whatever a given division head decides is efficient. Synths sent topside carry out relocation, retrieval, or replacement orders without explanation, and the Institute answers questions about its own activities only when it decides the answer serves it. Advancement inside its ranks is measured in results, not loyalty, and both are watched closely.</description>
+        <basicMemberKind>FCP_Pawnkind_Institute_Security</basicMemberKind>
+        <colorSpectrum>
+            <li>(0.35, 0.55, 0.65)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <pawnSingular>operative</pawnSingular>
+        <pawnsPlural>the Institute</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.05</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canSiege>false</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>Director</leaderTitle>
+        <fixedLeaderKinds>
+            <li>FCP_Unique_Pawnkind_Father</li>
+        </fixedLeaderKinds>
+        <factionIconPath>World_Icon/Institute_Icon/FCP_Institute_Icon</factionIconPath>
+        <techLevel>Spacer</techLevel>
+        <naturalEnemy>false</naturalEnemy>
+        <permanentEnemy>false</permanentEnemy>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    </FactionDef>
+
+</Defs>

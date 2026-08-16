@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Unique Pawnkinds __________-->
+
+    <!-- Father (Shaun) -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_Father</defName>
+        <label>Father</label>
+        <factionLeader>true</factionLeader>
+        <combatPower>60</combatPower>
+        <maxGenerationAge>60</maxGenerationAge>
+        <minGenerationAge>60</minGenerationAge>
+        <apparelMoney>900~1300</apparelMoney>
+        <weaponMoney>200~400</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Father_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Father_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Dr. Madison Li -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_MadisonLi</defName>
+        <label>Dr. Madison Li</label>
+        <combatPower>55</combatPower>
+        <maxGenerationAge>52</maxGenerationAge>
+        <minGenerationAge>52</minGenerationAge>
+        <apparelMoney>700~1000</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_MadisonLi_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_MadisonLi_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Justin Ayo -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_JustinAyo</defName>
+        <label>Justin Ayo</label>
+        <combatPower>135</combatPower>
+        <maxGenerationAge>48</maxGenerationAge>
+        <minGenerationAge>48</minGenerationAge>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <apparelMoney>800~1100</apparelMoney>
+        <weaponMoney>1000~1400</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_JustinAyo_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_JustinAyo_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Alana Secord -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_AlanaSecord</defName>
+        <label>Alana Secord</label>
+        <combatPower>115</combatPower>
+        <maxGenerationAge>34</maxGenerationAge>
+        <minGenerationAge>34</minGenerationAge>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <apparelMoney>700~1000</apparelMoney>
+        <weaponMoney>800~1100</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_AlanaSecord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_AlanaSecord_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Dr. Clayton Holdren -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_ClaytonHoldren</defName>
+        <label>Dr. Clayton Holdren</label>
+        <combatPower>50</combatPower>
+        <maxGenerationAge>55</maxGenerationAge>
+        <minGenerationAge>55</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_ClaytonHoldren_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_ClaytonHoldren_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Alan Binet -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_AlanBinet</defName>
+        <label>Alan Binet</label>
+        <combatPower>50</combatPower>
+        <maxGenerationAge>50</maxGenerationAge>
+        <minGenerationAge>50</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_AlanBinet_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_AlanBinet_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+</Defs>

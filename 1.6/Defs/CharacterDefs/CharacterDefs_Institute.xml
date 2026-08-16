@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ The Institute __________-->
+
+    <!-- Father (Shaun) -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_Father</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Father</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Shaun</firstName>
+                <lastName />
+                <nickname>Father</nickname>
+                <gender>Male</gender>
+                <age>60</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(200, 200, 200)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Dr. Madison Li -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_MadisonLi</defName>
+        <pawnKind>FCP_Unique_Pawnkind_MadisonLi</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>750</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Madison</firstName>
+                <lastName>Li</lastName>
+                <gender>Female</gender>
+                <age>52</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Prim_N_Proper</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Justin Ayo -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_JustinAyo</defName>
+        <pawnKind>FCP_Unique_Pawnkind_JustinAyo</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>820</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Justin</firstName>
+                <lastName>Ayo</lastName>
+                <gender>Male</gender>
+                <age>48</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_High_Riser</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(140, 100, 75)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Alana Secord -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_AlanaSecord</defName>
+        <pawnKind>FCP_Unique_Pawnkind_AlanaSecord</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>700</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Alana</firstName>
+                <lastName>Secord</lastName>
+                <gender>Female</gender>
+                <age>34</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 45, 35)</hairColor>
+                <hairDef>FCP_Hair_Unladylike</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Dr. Clayton Holdren -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_ClaytonHoldren</defName>
+        <pawnKind>FCP_Unique_Pawnkind_ClaytonHoldren</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>640</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Clayton</firstName>
+                <lastName>Holdren</lastName>
+                <gender>Male</gender>
+                <age>55</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 115, 110)</hairColor>
+                <hairDef>FCP_Hair_Shaggy_Suave</hairDef>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Alan Binet -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_AlanBinet</defName>
+        <pawnKind>FCP_Unique_Pawnkind_AlanBinet</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>660</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Alan</firstName>
+                <lastName>Binet</lastName>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 80, 60)</hairColor>
+                <hairDef>FCP_Hair_Waster</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+</Defs>
