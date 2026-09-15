@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Synth Tiers __________-->
+
+    <!-- Gen I -->
+
+    <FCP.Synths.SynthTierDef>
+        <defName>FCP_SynthTier_GenI</defName>
+        <label>gen 1 synth</label>
+        <tier>1</tier>
+        <pawnKindDef>FCP_Pawnkind_Synth_GenI</pawnKindDef>
+        <requiredResearch>FCP_Research_Synth_TierI</requiredResearch>
+        <gestationDays>1.5</gestationDays>
+        <powerDrawIdleWatts>50</powerDrawIdleWatts>
+        <powerDrawActiveWatts>400</powerDrawActiveWatts>
+        <bodyOverrideHediff>FCP_Hediff_Synth_GenI_Chassis</bodyOverrideHediff>
+        <yieldHediff>FCP_Hediff_Synth_GenI_Chassis</yieldHediff>
+        <ingredients>
+            <Steel>150</Steel>
+            <ComponentIndustrial>15</ComponentIndustrial>
+        </ingredients>
+    </FCP.Synths.SynthTierDef>
+
+    <!-- Gen II -->
+
+    <FCP.Synths.SynthTierDef MayRequire="ludeon.rimworld.biotech">
+        <defName>FCP_SynthTier_GenII</defName>
+        <label>gen 2 synth</label>
+        <tier>2</tier>
+        <pawnKindDef>FCP_Pawnkind_Synth_GenII</pawnKindDef>
+        <requiredResearch>FCP_Research_Synth_TierII</requiredResearch>
+        <gestationDays>3</gestationDays>
+        <powerDrawIdleWatts>60</powerDrawIdleWatts>
+        <powerDrawActiveWatts>600</powerDrawActiveWatts>
+        <yieldHediff>FCP_Hediff_Synth_GenII_Remains</yieldHediff>
+        <ingredients>
+            <Steel>100</Steel>
+            <ComponentIndustrial>25</ComponentIndustrial>
+            <Neutroamine>40</Neutroamine>
+        </ingredients>
+    </FCP.Synths.SynthTierDef>
+
+    <!-- Gen III -->
+
+    <FCP.Synths.SynthTierDef MayRequire="ludeon.rimworld.biotech">
+        <defName>FCP_SynthTier_GenIII</defName>
+        <label>gen 3 synth</label>
+        <tier>3</tier>
+        <pawnKindDef>FCP_Pawnkind_Synth_GenIII</pawnKindDef>
+        <requiredResearch>FCP_Research_Synth_TierIII</requiredResearch>
+        <gestationDays>6</gestationDays>
+        <powerDrawIdleWatts>80</powerDrawIdleWatts>
+        <powerDrawActiveWatts>900</powerDrawActiveWatts>
+        <yieldHediff>FCP_Hediff_SynthComponents_GenIII</yieldHediff>
+        <ingredients>
+            <Steel>40</Steel>
+            <ComponentIndustrial>60</ComponentIndustrial>
+            <Neutroamine>150</Neutroamine>
+            <Genepack>1</Genepack>
+        </ingredients>
+    </FCP.Synths.SynthTierDef>
+
+</Defs>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Unique Gen II Synths __________-->
+
+    <!-- DiMA -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Synth_DiMA</defName>
+        <pawnKind>FCP_Unique_Pawnkind_DiMA</pawnKind>
+        <xenotype>FCP_Xenotype_Synth_GenII</xenotype>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>DiMA</firstName>
+                <nickname>DiMA</nickname>
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <headTypeDef>FCP_Male_Synth_GenII_Head_DiMA</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+                <hairDef>Bald</hairDef>
+                <skinColorOverride>(160, 160, 165)</skinColorOverride>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition">
+                <hediffDef>FCP_Hediff_Synth_GenII_Remains</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Nick Valentine -->
+
+    <FCP.Core.CharacterDef MayRequire="Rick.FCP.Railroad">
+        <defName>FCP_Character_Synth_NickValentine</defName>
+        <pawnKind>FCP_Unique_Pawnkind_NickValentine</pawnKind>
+        <xenotype>FCP_Xenotype_Synth_GenII</xenotype>
+        <faction>FCP_Faction_Railroad</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Nick</firstName>
+                <lastName>Valentine</lastName>
+                <gender>Male</gender>
+                <age>45</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <headTypeDef>FCP_Male_Synth_GenII_Head_NickValentine</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+                <hairDef>GreasySwoop</hairDef>
+                <hairColor>(40, 35, 30)</hairColor>
+                <skinColorOverride>(194, 163, 140)</skinColorOverride>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition">
+                <hediffDef>FCP_Hediff_Synth_GenII_Remains</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+</Defs>

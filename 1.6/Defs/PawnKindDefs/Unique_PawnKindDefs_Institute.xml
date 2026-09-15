@@ -13,7 +13,7 @@
         <maxGenerationAge>60</maxGenerationAge>
         <minGenerationAge>60</minGenerationAge>
         <apparelMoney>900~1300</apparelMoney>
-        <weaponMoney>200~400</weaponMoney>
+        <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>
@@ -35,7 +35,7 @@
         <maxGenerationAge>52</maxGenerationAge>
         <minGenerationAge>52</minGenerationAge>
         <apparelMoney>700~1000</apparelMoney>
-        <weaponMoney>150~300</weaponMoney>
+        <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>
@@ -98,16 +98,16 @@
         </backstoryFiltersOverride>
     </PawnKindDef>
 
-    <!-- Dr. Clayton Holdren -->
+    <!-- Alan Binet -->
 
     <PawnKindDef ParentName="FCP_InstituteKindBase">
         <defName>FCP_Unique_Pawnkind_ClaytonHoldren</defName>
-        <label>Dr. Clayton Holdren</label>
+        <label>Alan Binet</label>
         <combatPower>50</combatPower>
         <maxGenerationAge>55</maxGenerationAge>
         <minGenerationAge>55</minGenerationAge>
         <apparelMoney>600~900</apparelMoney>
-        <weaponMoney>150~300</weaponMoney>
+        <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>
@@ -120,16 +120,16 @@
         </backstoryFiltersOverride>
     </PawnKindDef>
 
-    <!-- Alan Binet -->
+    <!-- Dr. Clayton Holdren -->
 
     <PawnKindDef ParentName="FCP_InstituteKindBase">
         <defName>FCP_Unique_Pawnkind_AlanBinet</defName>
-        <label>Alan Binet</label>
+        <label>Dr. Clayton Holdren</label>
         <combatPower>50</combatPower>
         <maxGenerationAge>50</maxGenerationAge>
         <minGenerationAge>50</minGenerationAge>
         <apparelMoney>600~900</apparelMoney>
-        <weaponMoney>150~300</weaponMoney>
+        <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>

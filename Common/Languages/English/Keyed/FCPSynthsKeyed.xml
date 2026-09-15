@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Synthesizer Pod -->
+
+	<FCP_SelectSynthTier>Select synth tier</FCP_SelectSynthTier>
+	<FCP_SelectSynthTierDesc>Choose which synth line to gestate. Requires the matching research and enough raw materials staged nearby.</FCP_SelectSynthTierDesc>
+	<FCP_SynthPodGestating>Gestating {0}: {1} complete</FCP_SynthPodGestating>
+	<FCP_SynthPodUpdatingProgramming>Updating programming: {0} complete</FCP_SynthPodUpdatingProgramming>
+	<FCP_SynthPodUpdatingProgramming_Start>{0}'s body has finished growing, but the Institute won't release it until its personality matrix finishes uploading. Expect another day before it's ready.</FCP_SynthPodUpdatingProgramming_Start>
+	<FCP_SynthPodNoPower>No power. Progress is paused.</FCP_SynthPodNoPower>
+	<FCP_SynthPodMissingMaterials>missing materials</FCP_SynthPodMissingMaterials>
+	<FCP_SynthPodNothingResearched>No synth tiers have been researched yet.</FCP_SynthPodNothingResearched>
+	<FCP_SynthPodComplete>{0} has finished gestating.</FCP_SynthPodComplete>
+
+	<!-- Synth Customization -->
+
+	<FCP_SynthCustomizeTitle>Finish Synth</FCP_SynthCustomizeTitle>
+	<FCP_SynthCustomizeFinalize>Confirm</FCP_SynthCustomizeFinalize>
+	<FCP_SynthCustomizeName>Name</FCP_SynthCustomizeName>
+	<FCP_SynthCustomizeAge>Age</FCP_SynthCustomizeAge>
+	<FCP_SynthCustomizeSkin>Skin tone</FCP_SynthCustomizeSkin>
+	<FCP_SynthCustomizeHairColor>Hair color</FCP_SynthCustomizeHairColor>
+	<FCP_SynthCustomizeBodyType>Body type</FCP_SynthCustomizeBodyType>
+	<FCP_BodyType_Male>Male</FCP_BodyType_Male>
+	<FCP_BodyType_Female>Female</FCP_BodyType_Female>
+	<FCP_BodyType_Thin>Thin</FCP_BodyType_Thin>
+	<FCP_BodyType_Fat>Fat</FCP_BodyType_Fat>
+	<FCP_BodyType_Hulk>Hulk</FCP_BodyType_Hulk>
+	<FCP_SynthCustomizeHair>Hair</FCP_SynthCustomizeHair>
+	<FCP_SynthCustomizeBeard>Facial hair</FCP_SynthCustomizeBeard>
+	<FCP_SynthCustomizeFaceTattoo>Face tattoo</FCP_SynthCustomizeFaceTattoo>
+	<FCP_SynthCustomizeBodyTattoo>Body tattoo</FCP_SynthCustomizeBodyTattoo>
+	<FCP_SynthCustomizeChildhoodBackstory>Childhood backstory</FCP_SynthCustomizeChildhoodBackstory>
+	<FCP_SynthCustomizeBackstory>Adulthood backstory</FCP_SynthCustomizeBackstory>
+
+</LanguageData>

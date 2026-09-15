@@ -103,7 +103,7 @@
         <faction>FCP_Faction_Institute</faction>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>700</seniority>
+                <seniority>500</seniority>
             </li>
         </roles>
         <definitions>
@@ -124,7 +124,7 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
-    <!-- Dr. Clayton Holdren -->
+    <!-- Alan Binet -->
 
     <FCP.Core.CharacterDef>
         <defName>FCP_Character_Institute_ClaytonHoldren</defName>
@@ -138,8 +138,8 @@
         </roles>
         <definitions>
             <li Class="FCP.Core.CharacterStoryDefinition">
-                <firstName>Clayton</firstName>
-                <lastName>Holdren</lastName>
+                <firstName>Alan</firstName>
+                <lastName>Binet</lastName>
                 <gender>Male</gender>
                 <age>55</age>
             </li>
@@ -154,7 +154,7 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
-    <!-- Alan Binet -->
+    <!-- Dr. Clayton Holdren -->
 
     <FCP.Core.CharacterDef>
         <defName>FCP_Character_Institute_AlanBinet</defName>
@@ -168,8 +168,8 @@
         </roles>
         <definitions>
             <li Class="FCP.Core.CharacterStoryDefinition">
-                <firstName>Alan</firstName>
-                <lastName>Binet</lastName>
+                <firstName>Clayton</firstName>
+                <lastName>Holdren</lastName>
                 <gender>Male</gender>
                 <age>50</age>
             </li>

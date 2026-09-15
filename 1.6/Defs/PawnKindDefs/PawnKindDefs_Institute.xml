@@ -20,10 +20,13 @@
         <weaponMoney>500~900</weaponMoney>
         <weaponTags>
             <li>SpacerGun</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Laser_Weapon</li>
         </weaponTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>15~25</initialResistanceRange>
     </PawnKindDef>
 
-    <!-- Institute Security (generic member) -->
+    <!-- Institute Security -->
 
     <PawnKindDef ParentName="FCP_InstituteKindBase">
         <defName>FCP_Pawnkind_Institute_Security</defName>
@@ -32,7 +35,7 @@
         <requiredWorkTags>
             <li>Violent</li>
         </requiredWorkTags>
-        <weaponMoney>700~1100</weaponMoney>
+        <weaponMoney>800~1200</weaponMoney>
     </PawnKindDef>
 
 </Defs>

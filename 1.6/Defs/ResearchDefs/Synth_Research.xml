@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Synth Research __________-->
+
+    <!-- Synth Fabrication I -->
+
+    <ResearchProjectDef>
+        <defName>FCP_Research_Synth_TierI</defName>
+        <label>synth fabrication I</label>
+        <description>Basic servo and chassis assembly. Enough to build a synth that moves and works, with no attempt to hide what it is.</description>
+        <baseCost>1200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>MicroelectronicsBasics</li>
+        </prerequisites>
+        <tab>FCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+    <!-- Synth Fabrication II -->
+
+    <ResearchProjectDef MayRequire="ludeon.rimworld.biotech">
+        <defName>FCP_Research_Synth_TierII</defName>
+        <label>synth fabrication II</label>
+        <description>Synthetic muscle and tissue grown over a metal frame. Close enough to human to pass a glance, not close enough to pass a scan.</description>
+        <baseCost>3200</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>FCP_Research_Synth_TierI</li>
+            <li>GrowthVats</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <tab>FCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+    <!-- Synth Fabrication III -->
+
+    <ResearchProjectDef MayRequire="ludeon.rimworld.biotech">
+        <defName>FCP_Research_Synth_TierIII</defName>
+        <label>synth fabrication III</label>
+        <description>The third-generation line. Bioengineered down to the blood and the bone, with nothing left to give it away except what's hidden inside.</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>FCP_Research_Synth_TierII</li>
+            <li>Archogenetics</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <tab>FCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+</Defs>

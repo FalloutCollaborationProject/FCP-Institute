@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Unique Gen II Synths __________-->
+
+    <!-- DiMA -->
+
+    <PawnKindDef ParentName="FCP_SynthkindBase">
+        <defName>FCP_Unique_Pawnkind_DiMA</defName>
+        <label>DiMA</label>
+        <combatPower>30</combatPower>
+        <apparelMoney>0</apparelMoney>
+        <weaponMoney>0</weaponMoney>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FCP_Xenotype_Synth_GenII>1</FCP_Xenotype_Synth_GenII>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_DiMA</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Nick Valentine -->
+
+    <PawnKindDef ParentName="FCP_SynthkindBase" MayRequire="Rick.FCP.Railroad">
+        <defName>FCP_Unique_Pawnkind_NickValentine</defName>
+        <label>Nick Valentine</label>
+        <combatPower>45</combatPower>
+        <apparelMoney>0</apparelMoney>
+        <weaponMoney>0</weaponMoney>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FCP_Xenotype_Synth_GenII>1</FCP_Xenotype_Synth_GenII>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_NickValentine</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+</Defs>

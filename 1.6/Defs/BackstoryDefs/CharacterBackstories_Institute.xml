@@ -150,7 +150,7 @@
         </skillGains>
     </BackstoryDef>
 
-    <!-- Dr. Clayton Holdren -->
+    <!-- Alan Binet -->
 
     <BackstoryDef>
         <defName>FCP_Character_Backstory_ClaytonHoldren_Child</defName>
@@ -186,7 +186,7 @@
         </skillGains>
     </BackstoryDef>
 
-    <!-- Alan Binet -->
+    <!-- Dr. Clayton Holdren -->
 
     <BackstoryDef>
         <defName>FCP_Character_Backstory_AlanBinet_Child</defName>

@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\1.6\Assemblies\FCP_Synths.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\Source\FCPSynths\obj\Debug\FCPSynths.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\Source\FCPSynths\obj\Debug\FCPSynths.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\Source\FCPSynths\obj\Debug\FCPSynths.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\Source\FCPSynths\obj\Debug\FCPSynths.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\Source\FCPSynths\obj\Debug\FCPSynths.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\Source\FCPSynths\obj\Debug\FCPSynths.sourcelink.json
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\FCP-Institute\Source\FCPSynths\obj\Debug\FCP_Synths.dll
