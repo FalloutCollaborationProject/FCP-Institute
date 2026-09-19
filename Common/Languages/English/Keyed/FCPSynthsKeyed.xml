@@ -34,4 +34,17 @@
 	<FCP_SynthCustomizeChildhoodBackstory>Childhood backstory</FCP_SynthCustomizeChildhoodBackstory>
 	<FCP_SynthCustomizeBackstory>Adulthood backstory</FCP_SynthCustomizeBackstory>
 
+	<!-- Synth Replacement Incident -->
+
+	<FCP_Institute_SynthReplacement_Title>Nothing Out of Place</FCP_Institute_SynthReplacement_Title>
+	<FCP_Institute_SynthReplacement_Text>{0} came back from the trip with the same face, the same voice, and the same habits as before. There is nothing here to point to. That is exactly how the Institute prefers it.</FCP_Institute_SynthReplacement_Text>
+
+	<!-- Institute Relocation Offer -->
+
+	<FCP_InstituteRelocation_Title>A Quiet Proposal</FCP_InstituteRelocation_Title>
+	<FCP_InstituteRelocation_Text>{0} has been discreetly approached by {1} with a one-time offer: step away from the colony for good and take up a post underground. In return, a shipment of equipment will be delivered and {1} will look more favorably on your colony. {0} would not be coming back.</FCP_InstituteRelocation_Text>
+	<FCP_InstituteRelocation_Accept>Let them go</FCP_InstituteRelocation_Accept>
+	<FCP_InstituteRelocation_ConfirmTitle>Transfer Complete</FCP_InstituteRelocation_ConfirmTitle>
+	<FCP_InstituteRelocation_ConfirmText>{0} was collected without incident. A shipment arrived shortly after, exactly as promised.</FCP_InstituteRelocation_ConfirmText>
+
 </LanguageData>

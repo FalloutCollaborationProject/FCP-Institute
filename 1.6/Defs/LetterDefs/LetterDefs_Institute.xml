@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Letters __________-->
+
+    <LetterDef ParentName="CustomChoiceLetterBase">
+        <defName>FCP_Letter_InstituteRelocationOffer</defName>
+        <letterClass>FCP.Synths.ChoiceLetter_InstituteRelocationOffer</letterClass>
+    </LetterDef>
+
+</Defs>

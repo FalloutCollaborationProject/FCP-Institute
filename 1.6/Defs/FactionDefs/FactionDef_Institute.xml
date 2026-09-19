@@ -31,6 +31,9 @@
         <techLevel>Spacer</techLevel>
         <naturalEnemy>false</naturalEnemy>
         <permanentEnemy>false</permanentEnemy>
+        <arrivalModeWhitelist>
+            <li>FCP_ArrivalMode_InstituteRelay</li>
+        </arrivalModeWhitelist>
         <backstoryFilters>
             <li>
                 <categories>
@@ -61,12 +64,13 @@
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <FCP_Pawnkind_Institute_Security>10</FCP_Pawnkind_Institute_Security>
+                    <FCP_Pawnkind_Institute_Personnel>10</FCP_Pawnkind_Institute_Personnel>
                 </options>
             </li>
             <li>
                 <kindDef>Settlement</kindDef>
                 <options>
+                    <FCP_Pawnkind_Institute_Personnel>15</FCP_Pawnkind_Institute_Personnel>
                     <FCP_Pawnkind_Institute_Security>10</FCP_Pawnkind_Institute_Security>
                 </options>
             </li>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Arrival __________-->
+
+    <!-- Molecular Relay -->
+
+    <PawnsArrivalModeDef>
+        <defName>FCP_ArrivalMode_InstituteRelay</defName>
+        <workerClass>FCP.Synths.PawnsArrivalModeWorker_InstituteRelay</workerClass>
+        <layerWhitelist>
+            <li>Surface</li>
+        </layerWhitelist>
+        <selectionWeightCurve>
+            <points>
+                <li>(0, 1)</li>
+            </points>
+        </selectionWeightCurve>
+        <minTechLevel>Spacer</minTechLevel>
+        <textEnemy>{0} from {1} have flickered into existence nearby in a burst of blue light.</textEnemy>
+        <textFriendly>{0} from {1} have arrived in a burst of blue light.</textFriendly>
+        <textWillArrive>{0_pawnsPluralDef} will arrive by molecular relay.</textWillArrive>
+    </PawnsArrivalModeDef>
+
+</Defs>

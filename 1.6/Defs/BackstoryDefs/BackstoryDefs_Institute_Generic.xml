@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Generic Backstories __________-->
+
+    <!--_____ Childhood _____-->
+
+    <!-- Institute Youth -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_General</defName>
+        <identifier>FCP_Backstory_Institute_Child_General</identifier>
+        <title>Institute Youth</title>
+        <titleShort>Institute Youth</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up underground on a schedule set by testing and evaluation rather than birthdays. [PAWN_pronoun] was told the surface was a mistake still being cleaned up, and had no particular reason to doubt it.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Robotics Track Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Robotics</defName>
+        <identifier>FCP_Backstory_Institute_Child_Robotics</identifier>
+        <title>Robotics Track Trainee</title>
+        <titleShort>Robotics Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] tested into the robotics track early and spent [PAWN_possessive] adolescence disassembling servo units before [PAWN_pronoun] was tall enough to reach the workbench standing up.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- BioScience Track Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_BioScience</defName>
+        <identifier>FCP_Backstory_Institute_Child_BioScience</identifier>
+        <title>BioScience Track Trainee</title>
+        <titleShort>BioScience Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] school years in BioScience's junior labs, running tissue samples and radiation assays under supervision that never once explained where the samples came from.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Medicine>3</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Security Track Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Security</defName>
+        <identifier>FCP_Backstory_Institute_Child_Security</identifier>
+        <title>Security Track Trainee</title>
+        <titleShort>Security Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] was flagged for the security track before [PAWN_pronoun] turned twelve, and spent the years after learning that Institute doctrine treats hesitation as a bigger risk than being wrong.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Intellectual>1</Intellectual>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Gene Sequencing Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_GeneSequencing</defName>
+        <identifier>FCP_Backstory_Institute_Child_GeneSequencing</identifier>
+        <title>Gene Sequencing Apprentice</title>
+        <titleShort>Sequencing Apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] learned to read a genome before [PAWN_pronoun] learned to write in cursive, spending afternoons in BioScience's sequencing labs matching traits to outcomes nobody explained to [PAWN_objective].</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Reactor Maintenance Cadet -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Reactor</defName>
+        <identifier>FCP_Backstory_Institute_Child_Reactor</identifier>
+        <title>Reactor Maintenance Cadet</title>
+        <titleShort>Reactor Cadet</titleShort>
+        <baseDesc>[PAWN_nameDef] shadowed Advanced Systems engineers through the reactor core's maintenance galleries, memorizing shutdown procedures for failures [PAWN_pronoun] was assured would never happen.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Synth Behavioral Study Subject -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_SynthBehavioral</defName>
+        <identifier>FCP_Backstory_Institute_Child_SynthBehavioral</identifier>
+        <title>Synth Behavioral Study Subject</title>
+        <titleShort>Behavioral Study</titleShort>
+        <baseDesc>[PAWN_nameDef] took part in the Institute's studies on synthetic personality calibration, sitting across from Gen 2 units and grading how convincingly they smiled.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Relay Technician Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Relay</defName>
+        <identifier>FCP_Backstory_Institute_Child_Relay</identifier>
+        <title>Relay Technician Trainee</title>
+        <titleShort>Relay Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up around the molecular relay's containment housing, taught early that a half-second of carelessness near it was the difference between a person and a very fine mist.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>1</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Directorate Page -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_DirectorateAide</defName>
+        <identifier>FCP_Backstory_Institute_Child_DirectorateAide</identifier>
+        <title>Directorate Page</title>
+        <titleShort>Directorate Page</titleShort>
+        <baseDesc>[PAWN_nameDef] ran messages between division heads long before [PAWN_pronoun] was old enough to understand half of what they were arguing about.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Hydroponics Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Hydroponics</defName>
+        <identifier>FCP_Backstory_Institute_Child_Hydroponics</identifier>
+        <title>Hydroponics Trainee</title>
+        <titleShort>Hydroponics Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] tended nutrient trays in the sublevel growing bays, one of the few Institute children who got to watch something grow instead of just being told how it worked.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>3</Plants>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Archive Clerk -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Archives</defName>
+        <identifier>FCP_Backstory_Institute_Child_Archives</identifier>
+        <title>Archive Clerk</title>
+        <titleShort>Archive Clerk</titleShort>
+        <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] afternoons cataloguing salvaged pre-War records in the Institute's archive, developing a better sense of the old world than most people who actually survived it.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Courser Candidate -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Courser</defName>
+        <identifier>FCP_Backstory_Institute_Child_Courser</identifier>
+        <title>Courser Candidate</title>
+        <titleShort>Courser Candidate</titleShort>
+        <baseDesc>[PAWN_nameDef] was pulled from the general security track and placed on the courser candidacy list, an honor that mostly meant harder drills and fewer questions answered.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Field Liaison Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_FieldLiaison</defName>
+        <identifier>FCP_Backstory_Institute_Child_FieldLiaison</identifier>
+        <title>Field Liaison Trainee</title>
+        <titleShort>Field Liaison Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] studied surface dialects and mannerisms from recovered recordings, part of an early education meant to make [PAWN_objective] convincing somewhere [PAWN_pronoun] had never been.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Munitions Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Armory</defName>
+        <identifier>FCP_Backstory_Institute_Child_Armory</identifier>
+        <title>Munitions Apprentice</title>
+        <titleShort>Munitions Apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] apprenticed under the Institute's armorers, learning to strip and rebuild laser weapons long before [PAWN_pronoun] was trusted to fire one.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Xenobiology Research Assistant -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Xenobiology</defName>
+        <identifier>FCP_Backstory_Institute_Child_Xenobiology</identifier>
+        <title>Xenobiology Research Assistant</title>
+        <titleShort>Xenobiology Assistant</titleShort>
+        <baseDesc>[PAWN_nameDef] catalogued specimens brought back from the surface, from irradiated insects to things nobody upstairs had a name for yet.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Animals>2</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Water Reclamation Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_WaterReclamation</defName>
+        <identifier>FCP_Backstory_Institute_Child_WaterReclamation</identifier>
+        <title>Water Reclamation Trainee</title>
+        <titleShort>Reclamation Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] learned the Institute's water purification systems from the ground up, starting with the unglamorous job of clearing filter sediment nobody senior wanted to touch.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Terminal Programmer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Terminals</defName>
+        <identifier>FCP_Backstory_Institute_Child_Terminals</identifier>
+        <title>Terminal Programmer</title>
+        <titleShort>Terminal Programmer</titleShort>
+        <baseDesc>[PAWN_nameDef] wrote [PAWN_possessive] first working program before [PAWN_pronoun] turned ten, and spent the years after finding the Institute's terminal network far more forgiving than its people.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Ethics Review Page -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Ethics</defName>
+        <identifier>FCP_Backstory_Institute_Child_Ethics</identifier>
+        <title>Ethics Review Page</title>
+        <titleShort>Ethics Page</titleShort>
+        <baseDesc>[PAWN_nameDef] sat in on the Institute's ethics review sessions as a student observer, and came away with more questions than the sessions were designed to answer.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+            <Social>3</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Quality Control Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_SynthQC</defName>
+        <identifier>FCP_Backstory_Institute_Child_SynthQC</identifier>
+        <title>Quality Control Trainee</title>
+        <titleShort>QC Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] learned to spot manufacturing defects in synth components on the production floor, a skill that transferred uncomfortably well to spotting flaws in people.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Power Grid Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_PowerGrid</defName>
+        <identifier>FCP_Backstory_Institute_Child_PowerGrid</identifier>
+        <title>Power Grid Apprentice</title>
+        <titleShort>Grid Apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] traced conduit routes through the Institute's substructure for [PAWN_possessive] engineering mentors, learning the facility's layout through its wiring before [PAWN_pronoun] learned it any other way.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Cartography Assistant -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Cartography</defName>
+        <identifier>FCP_Backstory_Institute_Child_Cartography</identifier>
+        <title>Cartography Assistant</title>
+        <titleShort>Cartography Assistant</titleShort>
+        <baseDesc>[PAWN_nameDef] helped compile surface maps from courser field reports, plotting settlements and hazards [PAWN_pronoun] would never see except as ink.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Artistic>1</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Recycling Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Recycling</defName>
+        <identifier>FCP_Backstory_Institute_Child_Recycling</identifier>
+        <title>Recycling Apprentice</title>
+        <titleShort>Recycling Apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] learned early that nothing in the Institute gets thrown away, sorting reclaimed materials in the recycling bays until it became second nature.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Mining>1</Mining>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Medical Ward Assistant -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Medical</defName>
+        <identifier>FCP_Backstory_Institute_Child_Medical</identifier>
+        <title>Medical Ward Assistant</title>
+        <titleShort>Ward Assistant</titleShort>
+        <baseDesc>[PAWN_nameDef] assisted in the Institute's medical ward from a young age, developing a clinical detachment that served [PAWN_objective] well and unsettled everyone else.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>3</Medicine>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Historian's Apprentice -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Historian</defName>
+        <identifier>FCP_Backstory_Institute_Child_Historian</identifier>
+        <title>Historian's Apprentice</title>
+        <titleShort>History Apprentice</titleShort>
+        <baseDesc>[PAWN_nameDef] studied the pre-War world under the Institute's resident historian, learning about a civilization [PAWN_pronoun] was taught to admire and never allowed to see the ruins of.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Chassis Fabrication Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Fabrication</defName>
+        <identifier>FCP_Backstory_Institute_Child_Fabrication</identifier>
+        <title>Chassis Fabrication Trainee</title>
+        <titleShort>Fabrication Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] apprenticeship in the fabrication bays, assembling synth endoskeletons piece by piece until the work stopped feeling strange.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Pneumatic Courier -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Courier</defName>
+        <identifier>FCP_Backstory_Institute_Child_Courier</identifier>
+        <title>Pneumatic Courier</title>
+        <titleShort>Pneumatic Courier</titleShort>
+        <baseDesc>[PAWN_nameDef] loaded and routed message capsules through the Institute's pneumatic tube network, one of the few jobs where a child could outrun most of the adults.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>1</Intellectual>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Advanced Systems Junior Analyst -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_AdvancedSystems</defName>
+        <identifier>FCP_Backstory_Institute_Child_AdvancedSystems</identifier>
+        <title>Advanced Systems Junior Analyst</title>
+        <titleShort>Junior Analyst</titleShort>
+        <baseDesc>[PAWN_nameDef] was tracked into Advanced Systems on the strength of aptitude tests that flagged [PAWN_objective] before [PAWN_pronoun] understood what any of the equations meant.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Containment Ward Attendant -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Containment</defName>
+        <identifier>FCP_Backstory_Institute_Child_Containment</identifier>
+        <title>Containment Ward Attendant</title>
+        <titleShort>Ward Attendant</titleShort>
+        <baseDesc>[PAWN_nameDef] assisted with malfunctioning synth units pulled from active duty, learning to stay calm around machines that had stopped behaving like machines.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>2</Medicine>
+            <Shooting>2</Shooting>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Compliance Auditor Trainee -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Child_Compliance</defName>
+        <identifier>FCP_Backstory_Institute_Child_Compliance</identifier>
+        <title>Compliance Auditor Trainee</title>
+        <titleShort>Auditor Trainee</titleShort>
+        <baseDesc>[PAWN_nameDef] trained to review division reports for procedural violations, developing an eye for the gap between what a report says and what actually happened.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!--_____ Adulthood _____-->
+
+    <!-- Internal Security Officer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Security</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Security</identifier>
+        <title>Internal Security Officer</title>
+        <titleShort>Security Officer</titleShort>
+        <baseDesc>[PAWN_nameDef] patrols the sublevels the surface never sees, treating every unscheduled sound as a containment problem until proven otherwise.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>2</Melee>
+            <Social>-1</Social>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Division Researcher -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Researcher</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Researcher</identifier>
+        <title>Division Researcher</title>
+        <titleShort>Researcher</titleShort>
+        <baseDesc>[PAWN_nameDef] holds a research post in one of the Institute's technical divisions, filing results upward and rarely hearing what becomes of them.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Systems Technician -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Technician</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Technician</identifier>
+        <title>Systems Technician</title>
+        <titleShort>Technician</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps the reactors, terminals, and gestation pods running, and has learned not to ask what half of the equipment [PAWN_pronoun] maintains is actually for.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Logistics Coordinator -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Logistics</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Logistics</identifier>
+        <title>Logistics Coordinator</title>
+        <titleShort>Coordinator</titleShort>
+        <baseDesc>[PAWN_nameDef] tracks resources, schedules, and personnel movements between divisions, and has a better sense than most of how much the Institute actually spends keeping itself hidden.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>4</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Gene Sequencing Technician -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_GeneSequencing</defName>
+        <identifier>FCP_Backstory_Institute_Adult_GeneSequencing</identifier>
+        <title>Gene Sequencing Technician</title>
+        <titleShort>Sequencing Tech</titleShort>
+        <baseDesc>[PAWN_nameDef] maps and edits genetic material for the Institute's gene therapy and xenotype programs, work [PAWN_pronoun] finds satisfying mostly because the results never argue back.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Medicine>3</Medicine>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Reactor Engineer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Reactor</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Reactor</identifier>
+        <title>Reactor Engineer</title>
+        <titleShort>Reactor Engineer</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps the Institute's reactor within tolerance, a job description that mostly means noticing small numbers before they become large problems.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Crafting>4</Crafting>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Synth Behavioral Analyst -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_SynthBehavioral</defName>
+        <identifier>FCP_Backstory_Institute_Adult_SynthBehavioral</identifier>
+        <title>Synth Behavioral Analyst</title>
+        <titleShort>Behavioral Analyst</titleShort>
+        <baseDesc>[PAWN_nameDef] reviews synth interaction logs for signs of drift from programmed personality baselines, flagging units for recalibration before their handlers ever notice anything wrong.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Relay Systems Engineer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Relay</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Relay</identifier>
+        <title>Relay Systems Engineer</title>
+        <titleShort>Relay Engineer</titleShort>
+        <baseDesc>[PAWN_nameDef] calibrates the molecular relay for safe transit, a responsibility [PAWN_pronoun] carries with the specific focus of someone who has seen what happens when the math is wrong.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>7</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Directorate Aide -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_DirectorateAide</defName>
+        <identifier>FCP_Backstory_Institute_Adult_DirectorateAide</identifier>
+        <title>Directorate Aide</title>
+        <titleShort>Directorate Aide</titleShort>
+        <baseDesc>[PAWN_nameDef] manages scheduling and correspondence for the Institute's division heads, and has learned more about how the place actually runs than most of the people [PAWN_pronoun] answers to.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Hydroponics Overseer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Hydroponics</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Hydroponics</identifier>
+        <title>Hydroponics Overseer</title>
+        <titleShort>Hydroponics Overseer</titleShort>
+        <baseDesc>[PAWN_nameDef] manages the underground growing bays that feed the Institute, a quietly essential job that nobody upstairs thinks about until a crop fails.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>6</Plants>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Chief Archivist -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Archives</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Archives</identifier>
+        <title>Chief Archivist</title>
+        <titleShort>Archivist</titleShort>
+        <baseDesc>[PAWN_nameDef] maintains the Institute's archive of pre-War documents and internal records, and has quietly read more of the Institute's own history than anyone thought to keep secret from [PAWN_objective].</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Social>2</Social>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Courser Handler -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Courser</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Courser</identifier>
+        <title>Courser Handler</title>
+        <titleShort>Courser Handler</titleShort>
+        <baseDesc>[PAWN_nameDef] coordinates courser deployments for the Synth Retention Bureau, treating retrieval and termination as the same line item on the same report.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>3</Melee>
+            <Social>-2</Social>
+        </skillGains>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Field Liaison Officer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_FieldLiaison</defName>
+        <identifier>FCP_Backstory_Institute_Adult_FieldLiaison</identifier>
+        <title>Field Liaison Officer</title>
+        <titleShort>Field Liaison</titleShort>
+        <baseDesc>[PAWN_nameDef] passes for a wastelander when the job requires it, gathering intelligence and materials topside while keeping the Institute's involvement carefully unmentioned.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Armory Quartermaster -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Armory</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Armory</identifier>
+        <title>Armory Quartermaster</title>
+        <titleShort>Quartermaster</titleShort>
+        <baseDesc>[PAWN_nameDef] maintains and issues the Institute's small arsenal of energy weapons, and can tell you the maintenance history of every rifle that leaves the armory by feel alone.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Xenobiology Researcher -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Xenobiology</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Xenobiology</identifier>
+        <title>Xenobiology Researcher</title>
+        <titleShort>Xenobiologist</titleShort>
+        <baseDesc>[PAWN_nameDef] studies the wasteland's mutated wildlife from the safety of a containment lab, treating every new specimen as data rather than a warning.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Animals>3</Animals>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Water Reclamation Engineer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_WaterReclamation</defName>
+        <identifier>FCP_Backstory_Institute_Adult_WaterReclamation</identifier>
+        <title>Water Reclamation Engineer</title>
+        <titleShort>Reclamation Engineer</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps the Institute's closed water system running below the threshold for failure, a thankless job that only gets noticed when it stops working.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Terminal Systems Programmer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Terminals</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Terminals</identifier>
+        <title>Terminal Systems Programmer</title>
+        <titleShort>Systems Programmer</titleShort>
+        <baseDesc>[PAWN_nameDef] writes and maintains the software running the Institute's terminals and internal systems, and trusts code to do what it's told more than [PAWN_pronoun] trusts most people to.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Social>-2</Social>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Ethics Review Officer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Ethics</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Ethics</identifier>
+        <title>Ethics Review Officer</title>
+        <titleShort>Ethics Officer</titleShort>
+        <baseDesc>[PAWN_nameDef] sits on the committee that signs off on the Institute's more questionable research, and has gotten very good at phrasing objections that change nothing.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Social>5</Social>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Synth Quality Control Inspector -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_SynthQC</defName>
+        <identifier>FCP_Backstory_Institute_Adult_SynthQC</identifier>
+        <title>Synth Quality Control Inspector</title>
+        <titleShort>QC Inspector</titleShort>
+        <baseDesc>[PAWN_nameDef] inspects newly gestated synths for defects before they're cleared for assignment, rejecting units for flaws most people would never notice.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Crafting>4</Crafting>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Power Grid Engineer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_PowerGrid</defName>
+        <identifier>FCP_Backstory_Institute_Adult_PowerGrid</identifier>
+        <title>Power Grid Engineer</title>
+        <titleShort>Grid Engineer</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps power routed to every division that needs it and rationed from every division that doesn't, a job that makes [PAWN_objective] quietly more powerful than [PAWN_possessive] title suggests.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Chief Cartographer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Cartography</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Cartography</identifier>
+        <title>Chief Cartographer</title>
+        <titleShort>Cartographer</titleShort>
+        <baseDesc>[PAWN_nameDef] maintains the Institute's surface maps from courser and field liaison reports, and knows the wasteland's geography better than anyone who has actually walked it.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Artistic>2</Artistic>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Recycling Foreman -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Recycling</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Recycling</identifier>
+        <title>Recycling Foreman</title>
+        <titleShort>Recycling Foreman</titleShort>
+        <baseDesc>[PAWN_nameDef] runs the reclamation lines that keep the Institute self-sufficient, turning scrap, waste, and the occasional decommissioned synth into raw material.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Mining>2</Mining>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Medical Officer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Medical</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Medical</identifier>
+        <title>Medical Officer</title>
+        <titleShort>Medical Officer</titleShort>
+        <baseDesc>[PAWN_nameDef] treats the Institute's population with equipment the surface would consider miraculous and a bedside manner it would consider nonexistent.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>7</Medicine>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Institute Historian -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Historian</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Historian</identifier>
+        <title>Institute Historian</title>
+        <titleShort>Historian</titleShort>
+        <baseDesc>[PAWN_nameDef] preserves and teaches pre-War history to the Institute's population, curating which parts of the old world are worth remembering and which are better left buried.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Social>3</Social>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Synth Chassis Fabricator -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Fabrication</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Fabrication</identifier>
+        <title>Synth Chassis Fabricator</title>
+        <titleShort>Chassis Fabricator</titleShort>
+        <baseDesc>[PAWN_nameDef] builds the metal frames underneath every synth the Institute produces, and takes a craftsman's pride in work most of the Institute would rather not think about.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>8</Crafting>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Pneumatic Systems Dispatcher -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Courier</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Courier</identifier>
+        <title>Pneumatic Systems Dispatcher</title>
+        <titleShort>Systems Dispatcher</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps the Institute's internal message and courier systems running, and has read more of other people's correspondence than [PAWN_pronoun] ever admits to.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>4</Social>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Senior Advanced Systems Analyst -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_AdvancedSystems</defName>
+        <identifier>FCP_Backstory_Institute_Adult_AdvancedSystems</identifier>
+        <title>Senior Advanced Systems Analyst</title>
+        <titleShort>Senior Analyst</titleShort>
+        <baseDesc>[PAWN_nameDef] models power distribution, synth logic architecture, and relay tolerances for Advanced Systems, work dense enough that most of the Institute takes [PAWN_possessive] conclusions on faith.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>9</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Containment Ward Warden -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Containment</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Containment</identifier>
+        <title>Containment Ward Warden</title>
+        <titleShort>Ward Warden</titleShort>
+        <baseDesc>[PAWN_nameDef] oversees the ward where decommissioned and defective synths are held pending disposal, and treats the distinction between the two categories as someone else's problem.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>4</Medicine>
+            <Shooting>4</Shooting>
+            <Social>-2</Social>
+        </skillGains>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+    <!-- Directorate Compliance Officer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Institute_Adult_Compliance</defName>
+        <identifier>FCP_Backstory_Institute_Adult_Compliance</identifier>
+        <title>Directorate Compliance Officer</title>
+        <titleShort>Compliance Officer</titleShort>
+        <baseDesc>[PAWN_nameDef] audits division activity on the Directorate's behalf, and has learned exactly how much noncompliance the Institute is willing to overlook in the name of results.</baseDesc>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Backstory_Institute</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+    </BackstoryDef>
+
+</Defs>

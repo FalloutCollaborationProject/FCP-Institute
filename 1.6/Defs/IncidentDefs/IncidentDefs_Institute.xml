@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Incidents __________-->
+
+    <!-- Relocation Offer -->
+
+    <IncidentDef>
+        <defName>FCP_Incident_InstituteRelocationOffer</defName>
+        <label>Institute relocation offer</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>FCP.Synths.IncidentWorker_InstituteRelocationOffer</workerClass>
+        <baseChance>2</baseChance>
+        <minRefireDays>20</minRefireDays>
+        <minPopulation>2</minPopulation>
+    </IncidentDef>
+
+</Defs>

@@ -24,6 +24,16 @@
         </weaponTags>
         <initialWillRange>1~3</initialWillRange>
         <initialResistanceRange>15~25</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Institute</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
     </PawnKindDef>
 
     <!-- Institute Security -->
@@ -36,6 +46,16 @@
             <li>Violent</li>
         </requiredWorkTags>
         <weaponMoney>800~1200</weaponMoney>
+    </PawnKindDef>
+
+    <!-- Institute Personnel -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Pawnkind_Institute_Personnel</defName>
+        <label>Institute personnel</label>
+        <combatPower>40</combatPower>
+        <apparelMoney>300~600</apparelMoney>
+        <weaponMoney>0~0</weaponMoney>
     </PawnKindDef>
 
 </Defs>
