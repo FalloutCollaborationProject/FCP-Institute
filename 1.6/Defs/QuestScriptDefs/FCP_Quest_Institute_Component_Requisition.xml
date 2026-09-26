@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>FCP_Quest_Institute_Component_Requisition</defName>
+        <rootSelectionWeight>0.5</rootSelectionWeight>
+        <rootMinPoints>15</rootMinPoints>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <canGiveRoyalFavor>true</canGiveRoyalFavor>
+        <expireDaysRange>5~10</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Component Requisition</li>
+                <li>questName->Materiel Transfer</li>
+                <li>questName->Requisition Order</li>
+                <li>questName->Parts Manifest</li>
+                <li>questName->Supply Directive</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] has flagged a shortfall in synth components on the manifest. Fill the order and the payment routes through relay channels, no questions about sourcing.\n\nRequirements: deliver [requiredComponents] synth components to your stockpile within [bountyDuration_duration].</li>
+                <li>questDescription->[asker_nameFull]: "Production doesn't stop because the supply chain hiccuped. Fill this requisition and we'll consider the shortfall resolved."\n\nRequirements: deliver [requiredComponents] synth components to your stockpile within [bountyDuration_duration].</li>
+                <li>questDescription->The Institute doesn't care where components come from, only that they arrive. [asker_nameFull] has authorized payment for [requiredComponents] units, delivered intact.\n\nRequirements: deliver [requiredComponents] synth components to your stockpile within [bountyDuration_duration].</li>
+                <li>questDescription->A gap in the parts inventory has stalled a division's work. [asker_nameFull] wants it closed quietly and quickly.\n\nRequirements: deliver [requiredComponents] synth components to your stockpile within [bountyDuration_duration].</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.2</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1.5</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <factionDefs>
+                        <li>FCP_Faction_Institute</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionToUse>$askerFaction</factionToUse>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>requiredComponents</name>
+                    <value>$(randInt(8,15))</value>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>bountyDays</name>
+                    <value>15</value>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>bountyDuration</name>
+                    <value>$(bountyDays * 60000)</value>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_WatchItemCountOnMap">
+                    <map>$map</map>
+                    <itemDef>FCP_SynthComponents</itemDef>
+                    <requiredCount>$requiredComponents</requiredCount>
+                    <outSignalComplete>components.Delivered</outSignalComplete>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>components.Delivered</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <letterDef>PositiveEvent</letterDef>
+                                <label>Requisition filled</label>
+                                <text>The shipment's been logged and cleared. No one on the relay end asks where it came from, only that the count matches.</text>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>true</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>false</addCampLootReward>
+                                <customLetterLabel>Requisition payment</customLetterLabel>
+                                <customLetterText>Payment for [requiredComponents] synth components, cleared through Institute channels.</customLetterText>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Delay">
+                    <delayTicks>$bountyDuration</delayTicks>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Requisition cancelled</label>
+                                <letterDef>NegativeEvent</letterDef>
+                                <text>The order's been reassigned elsewhere. The Institute doesn't wait on a shortfall for long.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

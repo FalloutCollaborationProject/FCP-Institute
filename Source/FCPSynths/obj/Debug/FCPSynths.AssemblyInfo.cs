@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright ©Fallout Collaboration Project 2024")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c9130a52dd37035a42a1f6eddbb80d768e4fa30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d74fa61b35fb85265c498a8b030bc303f6b5029")]
 [assembly: System.Reflection.AssemblyProductAttribute("FalloutCollaborationProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCP_Synths")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

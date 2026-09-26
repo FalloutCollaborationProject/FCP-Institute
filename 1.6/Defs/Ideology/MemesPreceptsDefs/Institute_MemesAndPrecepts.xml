@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Ideology __________-->
+
+    <!-- Technocratic Rationalism -->
+
+    <MemeDef>
+        <defName>FCP_Meme_Institute_Technocracy</defName>
+        <label>Technocratic Rationalism</label>
+        <description>Progress is the only virtue that holds up under examination, and the people best equipped to pursue it are the ones who understand it. Synths, gene therapy, and every other tool of the Institute's making exist to serve that progress, not to be consulted about it. Sentiment is a resource the Institute has learned to do without.</description>
+        <iconPath>World_Icon/Institute_Icon/FCP_Institute_Icon</iconPath>
+        <groupDef>Misc</groupDef>
+        <impact>3</impact>
+        <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+        <hiddenInChooseMemes>true</hiddenInChooseMemes>
+        <requireOne>
+            <li><li>Slavery_Acceptable</li></li>
+            <li><li>OrganUse_Acceptable</li></li>
+            <li><li>Cannibalism_Abhorrent</li></li>
+            <li><li>IdeoDiversity_Approved</li></li>
+            <li><li>DrugUse_MedicalOrSocial</li></li>
+            <li><li>Execution_DontCare</li></li>
+            <li><li>Research_VeryFast</li></li>
+            <li><li>FCP_Precept_Institute_ResultsOverSentiment</li></li>
+            <li><li>FCP_Precept_Institute_ControlledEnvironment</li></li>
+        </requireOne>
+        <generalRules>
+            <rulesStrings>
+                <li>memeAdjective->rational</li>
+                <li>memeAdjective->methodical</li>
+                <li>memeAdjective->detached</li>
+                <li>memeCreed->the pursuit of progress</li>
+                <li>memeCreed->measurable results</li>
+                <li>memeConcept->efficiency</li>
+                <li>memeConcept->the scientific method</li>
+            </rulesStrings>
+        </generalRules>
+    </MemeDef>
+
+    <!-- Courser Role -->
+
+    <MemeDef>
+        <defName>FCP_Meme_Institute_Coursers</defName>
+        <label>The Coursers</label>
+        <description>Every division eventually needs something found, retrieved, or handled personally. The Institute keeps a standing answer to that problem.</description>
+        <iconPath>World_Icon/Institute_Icon/FCP_Institute_Icon</iconPath>
+        <groupDef>Misc</groupDef>
+        <impact>2</impact>
+        <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+        <hiddenInChooseMemes>true</hiddenInChooseMemes>
+        <requireOne>
+            <li>
+                <li>FCP_IdeoRole_Institute_Courser</li>
+            </li>
+        </requireOne>
+    </MemeDef>
+
+    <!--__________ Precepts __________-->
+
+    <!-- Results Over Sentiment -->
+
+    <PreceptDef>
+        <defName>FCP_Precept_Institute_ResultsOverSentiment</defName>
+        <issue>Charity</issue>
+        <label>results, not sentiment</label>
+        <description>Compassion doesn't get the work done. What matters is whether a division delivers, and delivers well, not how anyone up top feels about the method. The Institute doesn't apologize for choosing efficiency over feelings, here or anywhere else.</description>
+        <impact>High</impact>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <statOffsets>
+            <ResearchSpeed>0.15</ResearchSpeed>
+            <TradePriceImprovement>-0.05</TradePriceImprovement>
+        </statOffsets>
+    </PreceptDef>
+
+    <!-- Controlled Environment -->
+
+    <PreceptDef>
+        <defName>FCP_Precept_Institute_ControlledEnvironment</defName>
+        <issue>Indoors</issue>
+        <label>the surface is a liability</label>
+        <description>Weather, disease, sunburn, wasted daylight: the surface offers nothing a properly engineered facility doesn't already provide better. Personnel who can be kept below are kept below.</description>
+        <impact>Medium</impact>
+        <displayOrderInImpact>101</displayOrderInImpact>
+        <statOffsets>
+            <ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+        </statOffsets>
+    </PreceptDef>
+
+    <!--__________ Roles __________-->
+
+    <!-- Courser -->
+
+    <PreceptDef ParentName="PreceptRoleMultiBase">
+        <defName>FCP_IdeoRole_Institute_Courser</defName>
+        <label>Courser</label>
+        <description>Coursers are the Institute's field enforcers, dispatched to retrieve escaped synths or handle whatever a division head decides needs handling personally. Calm, relentless, and built for exactly this.</description>
+        <iconPath>World_Icon/Institute_Icon/FCP_Institute_Icon</iconPath>
+        <nameMaker>NamerRoleShooter</nameMaker>
+        <roleRequirements>
+            <li Class="RoleRequirement_MinSkillAny">
+                <skills>
+                    <Shooting>10</Shooting>
+                    <Melee>8</Melee>
+                </skills>
+            </li>
+        </roleRequirements>
+        <roleRequiredWorkTags>
+            <li>Violent</li>
+        </roleRequiredWorkTags>
+        <roleTags>
+            <li>ShootingSpecialist</li>
+        </roleTags>
+        <requiredMemes>
+            <li>FCP_Meme_Institute_Coursers</li>
+        </requiredMemes>
+        <roleEffects>
+            <li Class="RoleEffect_PawnStatOffset">
+                <statDef>ShootingAccuracyPawn</statDef>
+                <modifier>6</modifier>
+            </li>
+            <li Class="RoleEffect_PawnStatOffset">
+                <statDef>MeleeHitChance</statDef>
+                <modifier>4</modifier>
+            </li>
+            <li Class="RoleEffect_PawnStatOffset">
+                <statDef>MoveSpeed</statDef>
+                <modifier>0.2</modifier>
+            </li>
+        </roleEffects>
+        <displayOrderInImpact>1</displayOrderInImpact>
+        <roleDisabledWorkTags>
+            <li>PlantWork</li>
+            <li>Cleaning</li>
+        </roleDisabledWorkTags>
+    </PreceptDef>
+
+</Defs>

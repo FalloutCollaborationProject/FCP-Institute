@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Molecular Relay Terminal __________-->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>FCP_Institute_RelayTerminal</defName>
+        <label>molecular relay terminal</label>
+        <description>A player-built matter stream transmitter, reverse-engineered from Institute salvage. Powering it up and stepping into the beam sends whoever's standing on the pad straight down into the Institute itself. There's no road that leads there, and no way back except the same beam.</description>
+        <thingClass>FCP.PocketMaps.PresettableMapPortal</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Buildings/Synth_Constructor/FCP_Synth_Constructor_Base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.5</staticSunShadowHeight>
+        <size>(2,3)</size>
+        <costList>
+            <Steel>250</Steel>
+            <ComponentSpacer>6</ComponentSpacer>
+            <Plasteel>100</Plasteel>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>1.0</fillPercent>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <WorkToBuild>9000</WorkToBuild>
+            <MaxHitPoints>350</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+        </statBases>
+        <passability>Impassable</passability>
+        <designationCategory>Production</designationCategory>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <tickerType>Normal</tickerType>
+        <building>
+            <isEdifice>true</isEdifice>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>800</basePowerConsumption>
+                <shortCircuitInRain>true</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="FCP.Core.CompProperties_TopGraphicOverhang">
+                <texPath>Buildings/Synth_Constructor/FCP_Synth_Constructor_Top</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>FCP.Synths.PlaceWorker_RequiresInstituteEnlistment</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>FCP_Research_Institute_MolecularRelay</li>
+        </researchPrerequisites>
+        <portal>
+            <pocketMapGenerator>FCP_Institute_RelayMapGen</pocketMapGenerator>
+            <exitDef>FCP_Institute_RelayExit</exitDef>
+        </portal>
+        <inspectorTabs>
+            <li>ITab_ContentsMapPortal</li>
+        </inspectorTabs>
+        <modExtensions>
+            <li Class="FCP.PocketMaps.ModExtensionPresettablePocketMap">
+                <prefabDefs>
+                    <li>FCP_Institute_RelayChamber</li>
+                </prefabDefs>
+                <abandonedMessage>The relay terminal has lost its lock on the Institute. Whatever was on the other end of the beam, it isn't answering anymore.</abandonedMessage>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--__________ Hijacked Relay Terminal __________-->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>FCP_Institute_HijackedRelayTerminal</defName>
+        <label>hijacked relay terminal</label>
+        <description>A brute-force rig built around a salvaged AI core, forcing a lock onto the Institute's own relay frequency without their say-so. Nobody on the other end sent an invitation, and whoever steps into this beam is walking in uninvited.</description>
+        <thingClass>FCP.PocketMaps.PresettableMapPortal</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Buildings/Synth_Constructor/FCP_Synth_Constructor_Base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.5</staticSunShadowHeight>
+        <size>(2,3)</size>
+        <costList>
+            <Steel>250</Steel>
+            <ComponentSpacer>6</ComponentSpacer>
+            <Plasteel>100</Plasteel>
+            <AIPersonaCore>1</AIPersonaCore>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>1.0</fillPercent>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <WorkToBuild>9000</WorkToBuild>
+            <MaxHitPoints>350</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+        </statBases>
+        <passability>Impassable</passability>
+        <designationCategory>Production</designationCategory>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <tickerType>Normal</tickerType>
+        <building>
+            <isEdifice>true</isEdifice>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>800</basePowerConsumption>
+                <shortCircuitInRain>true</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="FCP.Core.CompProperties_TopGraphicOverhang">
+                <texPath>Buildings/Synth_Constructor/FCP_Synth_Constructor_Top</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>FCP_Research_Institute_SignalIntercept</li>
+        </researchPrerequisites>
+        <portal>
+            <pocketMapGenerator>FCP_Institute_RelayMapGen</pocketMapGenerator>
+            <exitDef>FCP_Institute_RelayExit</exitDef>
+        </portal>
+        <inspectorTabs>
+            <li>ITab_ContentsMapPortal</li>
+        </inspectorTabs>
+        <modExtensions>
+            <li Class="FCP.PocketMaps.ModExtensionPresettablePocketMap">
+                <prefabDefs>
+                    <li>FCP_Institute_RelayChamber</li>
+                </prefabDefs>
+                <abandonedMessage>The hijacked signal has been lost. Whatever the Institute did on their end, the frequency is dead now.</abandonedMessage>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="PocketMapExit">
+        <defName>FCP_Institute_RelayExit</defName>
+        <label>relay pad</label>
+        <description>The return pad. Stand on it and the beam pulls you back the way you came.</description>
+        <size>(1,1)</size>
+        <drawerType>RealtimeOnly</drawerType>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/AncientHatchExit/AncientHatchExit</texPath>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="FCP.PocketMaps.CompProperties_PocketMapControl" />
+        </comps>
+    </ThingDef>
+
+    <!--__________ Relay Map Generation __________-->
+
+    <MapGeneratorDef>
+        <defName>FCP_Institute_RelayMapGen</defName>
+        <label>Institute relay chamber</label>
+        <isUnderground>true</isUnderground>
+        <disableCallAid>true</disableCallAid>
+        <pocketMapProperties>
+            <biome>Underground</biome>
+            <temperature>20</temperature>
+            <canBeCleaned>true</canBeCleaned>
+        </pocketMapProperties>
+        <genSteps>
+            <li MayRequire="Rick.FCPPocketMap">PresettableMapEntrance</li>
+        </genSteps>
+    </MapGeneratorDef>
+
+    <!--__________ Relay Chamber Layout __________-->
+
+    <FCP.PocketMaps.PocketMapPrefabDef>
+        <defName>FCP_Institute_RelayChamber</defName>
+        <floorDef>SterileTile</floorDef>
+        <size>(15,11)</size>
+        <factionDef>FCP_Faction_Institute</factionDef>
+        <pawnKinds>
+            <FCP_Pawnkind_Institute_Personnel>1</FCP_Pawnkind_Institute_Personnel>
+            <FCP_Pawnkind_Institute_CombatSynth>2</FCP_Pawnkind_Institute_CombatSynth>
+            <FCP_Pawnkind_Institute_RequisitionOfficer>1</FCP_Pawnkind_Institute_RequisitionOfficer>
+        </pawnKinds>
+        <things>
+
+            <!-- Perimeter -->
+
+            <Wall>
+                <rects>
+                    <li>(0,0,14,0)</li>
+                    <li>(0,10,14,10)</li>
+                    <li>(0,0,0,10)</li>
+                    <li>(14,0,14,10)</li>
+                </rects>
+                <stuff>Plasteel</stuff>
+            </Wall>
+
+            <!-- Power -->
+
+            <PowerConduit>
+                <rects>
+                    <li>(1,1,13,1)</li>
+                </rects>
+            </PowerConduit>
+            <ChemfuelPoweredGenerator>
+                <position>(1,0,1)</position>
+                <quality>Normal</quality>
+                <fullFuel>true</fullFuel>
+            </ChemfuelPoweredGenerator>
+            <Battery>
+                <position>(2,0,1)</position>
+            </Battery>
+
+            <!-- Lighting -->
+
+            <WallLamp>
+                <positions>
+                    <li>(4,0,1)</li>
+                    <li>(10,0,1)</li>
+                </positions>
+                <relativeRotation>south</relativeRotation>
+            </WallLamp>
+            <WallLamp>
+                <positions>
+                    <li>(4,0,9)</li>
+                    <li>(10,0,9)</li>
+                </positions>
+                <relativeRotation>north</relativeRotation>
+            </WallLamp>
+
+            <!-- Receiving pad -->
+
+            <FCP_Institute_RelayExit>
+                <position>(7,0,5)</position>
+            </FCP_Institute_RelayExit>
+
+            <!-- Monitoring station -->
+
+            <FCP_Production_Old_Table_Terminal>
+                <position>(12,0,5)</position>
+            </FCP_Production_Old_Table_Terminal>
+            <FCP_Furniture_Bunker_Chair MayRequire="Rick.FCP.Furniture">
+                <position>(12,0,6)</position>
+                <relativeRotation>north</relativeRotation>
+            </FCP_Furniture_Bunker_Chair>
+
+            <!-- Deeper access -->
+
+            <FCP_Institute_DeepAccessElevator>
+                <position>(3,0,7)</position>
+            </FCP_Institute_DeepAccessElevator>
+
+        </things>
+    </FCP.PocketMaps.PocketMapPrefabDef>
+
+    <!--__________ Deep Access Elevator __________-->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>FCP_Institute_DeepAccessElevator</defName>
+        <label>Institute elevator</label>
+        <description>A reinforced elevator shaft, humming quietly behind its blast door. It doesn't go up; there's no surface access from here. It goes deeper, into the facility proper.</description>
+        <size>(2,2)</size>
+        <useHitPoints>false</useHitPoints>
+        <thingClass>FCP.PocketMaps.PresettableMapPortal</thingClass>
+        <rotatable>false</rotatable>
+        <canOverlapZones>false</canOverlapZones>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Buildings/Synth_Constructor/FCP_Synth_Constructor_Base</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <fillPercent>0</fillPercent>
+        <passability>Impassable</passability>
+        <holdsRoof>true</holdsRoof>
+        <destroyable>false</destroyable>
+        <building>
+            <isEdifice>true</isEdifice>
+            <deconstructible>false</deconstructible>
+            <isTargetable>false</isTargetable>
+            <isInert>true</isInert>
+            <claimable>false</claimable>
+            <expandHomeArea>false</expandHomeArea>
+        </building>
+        <portal>
+            <pocketMapGenerator>FCP_Institute_FacilityMapGen</pocketMapGenerator>
+            <exitDef>FCP_Institute_FacilityExit</exitDef>
+        </portal>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <inspectorTabs>
+            <li>ITab_ContentsMapPortal</li>
+        </inspectorTabs>
+        <modExtensions>
+            <li Class="FCP.PocketMaps.ModExtensionPresettablePocketMap">
+                <prefabDefs>
+                    <li>FCP_Institute_Facility_L1</li>
+                </prefabDefs>
+                <abandonedMessage>The elevator shaft beyond the chamber has been sealed off. Whatever was down there is no longer reachable.</abandonedMessage>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="PocketMapExit">
+        <defName>FCP_Institute_FacilityExit</defName>
+        <label>elevator</label>
+        <description>The elevator back up to the relay chamber.</description>
+        <size>(1,1)</size>
+        <drawerType>RealtimeOnly</drawerType>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/AncientHatchExit/AncientHatchExit</texPath>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="FCP.PocketMaps.CompProperties_PocketMapControl" />
+        </comps>
+    </ThingDef>
+
+    <!--__________ Facility Map Generation __________-->
+
+    <MapGeneratorDef>
+        <defName>FCP_Institute_FacilityMapGen</defName>
+        <label>Institute facility</label>
+        <isUnderground>true</isUnderground>
+        <disableCallAid>true</disableCallAid>
+        <pocketMapProperties>
+            <biome>Underground</biome>
+            <temperature>20</temperature>
+            <canBeCleaned>true</canBeCleaned>
+        </pocketMapProperties>
+        <genSteps>
+            <li MayRequire="Rick.FCPPocketMap">PresettableMapEntrance</li>
+        </genSteps>
+    </MapGeneratorDef>
+
+    <!--__________ Facility Layout __________-->
+
+    <FCP.PocketMaps.PocketMapPrefabDef>
+        <defName>FCP_Institute_Facility_L1</defName>
+        <floorDef>SterileTile</floorDef>
+        <size>(36,18)</size>
+        <factionDef>FCP_Faction_Institute</factionDef>
+        <pawnKinds>
+            <FCP_Pawnkind_Institute_Personnel>4</FCP_Pawnkind_Institute_Personnel>
+            <FCP_Pawnkind_Institute_CombatSynth>3</FCP_Pawnkind_Institute_CombatSynth>
+            <FCP_Pawnkind_Institute_Courser>1</FCP_Pawnkind_Institute_Courser>
+        </pawnKinds>
+        <things>
+
+            <!-- ============================================================ -->
+            <!-- Perimeter -->
+            <!-- ============================================================ -->
+
+            <Wall>
+                <rects>
+                    <li>(0,0,35,0)</li>
+                    <li>(0,17,35,17)</li>
+                    <li>(0,0,0,17)</li>
+                    <li>(35,0,35,17)</li>
+
+                    <!-- North divider: Concourse | Advanced Systems Lab -->
+                    <li>(17,1,17,6)</li>
+
+                    <!-- South divider: BioScience Wing | SRB Security Post -->
+                    <li>(17,11,17,16)</li>
+
+                    <!-- Corridor wall, north side (doors at 8, 26) -->
+                    <li>(1,7,7,7)</li>
+                    <li>(9,7,25,7)</li>
+                    <li>(27,7,34,7)</li>
+
+                    <!-- Corridor wall, south side (doors at 8, 26) -->
+                    <li>(1,10,7,10)</li>
+                    <li>(9,10,25,10)</li>
+                    <li>(27,10,34,10)</li>
+                </rects>
+                <stuff>Plasteel</stuff>
+            </Wall>
+
+            <Door>
+                <rects>
+                    <li>(8,7,8,7)</li>
+                    <li>(26,7,26,7)</li>
+                    <li>(8,10,8,10)</li>
+                    <li>(26,10,26,10)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- ============================================================ -->
+            <!-- Power -->
+            <!-- ============================================================ -->
+
+            <PowerConduit>
+                <rects>
+                    <li>(1,8,34,8)</li>
+                    <li>(8,1,8,7)</li>
+                    <li>(26,1,26,7)</li>
+                    <li>(8,10,8,16)</li>
+                    <li>(26,10,26,16)</li>
+                </rects>
+            </PowerConduit>
+            <ChemfuelPoweredGenerator>
+                <position>(1,0,8)</position>
+                <quality>Normal</quality>
+                <fullFuel>true</fullFuel>
+            </ChemfuelPoweredGenerator>
+            <Battery>
+                <position>(2,0,8)</position>
+            </Battery>
+
+            <!-- ============================================================ -->
+            <!-- Lighting -->
+            <!-- ============================================================ -->
+
+            <WallLamp>
+                <positions>
+                    <li>(8,0,1)</li>
+                    <li>(26,0,1)</li>
+                </positions>
+                <relativeRotation>south</relativeRotation>
+            </WallLamp>
+            <WallLamp>
+                <positions>
+                    <li>(8,0,16)</li>
+                    <li>(26,0,16)</li>
+                </positions>
+                <relativeRotation>north</relativeRotation>
+            </WallLamp>
+            <WallLamp>
+                <positions>
+                    <li>(10,0,8)</li>
+                </positions>
+                <relativeRotation>south</relativeRotation>
+            </WallLamp>
+            <WallLamp>
+                <positions>
+                    <li>(24,0,9)</li>
+                </positions>
+                <relativeRotation>north</relativeRotation>
+            </WallLamp>
+
+            <!-- ============================================================ -->
+            <!-- Concourse -->
+            <!-- ============================================================ -->
+
+            <FCP_Institute_FacilityExit>
+                <position>(3,0,3)</position>
+            </FCP_Institute_FacilityExit>
+            <FCP_Furniture_Bunker_Chair MayRequire="Rick.FCP.Furniture">
+                <position>(6,0,3)</position>
+            </FCP_Furniture_Bunker_Chair>
+            <FCP_Furniture_Bunker_Chair MayRequire="Rick.FCP.Furniture">
+                <position>(6,0,5)</position>
+            </FCP_Furniture_Bunker_Chair>
+
+            <!-- ============================================================ -->
+            <!-- Advanced Systems Lab -->
+            <!-- ============================================================ -->
+
+            <FCP_Production_Old_Table_Terminal>
+                <position>(21,0,3)</position>
+            </FCP_Production_Old_Table_Terminal>
+            <FCP_Production_Old_Table_Terminal>
+                <position>(30,0,3)</position>
+            </FCP_Production_Old_Table_Terminal>
+            <FCP_Furniture_Bunker_Chair MayRequire="Rick.FCP.Furniture">
+                <position>(21,0,4)</position>
+                <relativeRotation>north</relativeRotation>
+            </FCP_Furniture_Bunker_Chair>
+            <FCP_Furniture_Bunker_Chair MayRequire="Rick.FCP.Furniture">
+                <position>(30,0,4)</position>
+                <relativeRotation>north</relativeRotation>
+            </FCP_Furniture_Bunker_Chair>
+
+            <!-- ============================================================ -->
+            <!-- BioScience Wing -->
+            <!-- ============================================================ -->
+
+            <HospitalBed>
+                <position>(4,0,13)</position>
+            </HospitalBed>
+            <HospitalBed>
+                <position>(13,0,13)</position>
+            </HospitalBed>
+            <FCP_Production_Old_Table_Terminal>
+                <position>(8,0,16)</position>
+            </FCP_Production_Old_Table_Terminal>
+
+            <!-- ============================================================ -->
+            <!-- SRB Security Post -->
+            <!-- ============================================================ -->
+
+            <FCP_Production_Old_Table_Terminal>
+                <position>(26,0,16)</position>
+            </FCP_Production_Old_Table_Terminal>
+            <FCP_Furniture_Bunker_Chair MayRequire="Rick.FCP.Furniture">
+                <position>(26,0,15)</position>
+                <relativeRotation>south</relativeRotation>
+            </FCP_Furniture_Bunker_Chair>
+
+        </things>
+    </FCP.PocketMaps.PocketMapPrefabDef>
+
+</Defs>

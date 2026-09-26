@@ -47,4 +47,9 @@
 	<FCP_InstituteRelocation_ConfirmTitle>Transfer Complete</FCP_InstituteRelocation_ConfirmTitle>
 	<FCP_InstituteRelocation_ConfirmText>{0} was collected without incident. A shipment arrived shortly after, exactly as promised.</FCP_InstituteRelocation_ConfirmText>
 
+	<!-- Molecular Relay Terminal -->
+
+	<FCP_RelayTerminal_NoInstitute>The Institute doesn't exist in this world, so there's nothing to relay to.</FCP_RelayTerminal_NoInstitute>
+	<FCP_RelayTerminal_RequiresEnlistment>The relay's theory checks out, but activating it without Institute authorization would just get the beam scrambled. Enlist with the Institute first.</FCP_RelayTerminal_RequiresEnlistment>
+
 </LanguageData>

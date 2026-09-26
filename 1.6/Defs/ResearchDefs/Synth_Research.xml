@@ -52,4 +52,40 @@
         <tab>FCP_Faction_Research</tab>
     </ResearchProjectDef>
 
+    <!-- Molecular Relay -->
+
+    <ResearchProjectDef MayRequire="ludeon.rimworld.biotech">
+        <defName>FCP_Research_Institute_MolecularRelay</defName>
+        <label>molecular relay</label>
+        <description>Matter-stream teleportation, the Institute's signature achievement. Field-tested for years on synths and cargo before anyone in the Directorate agreed to step into the beam themselves.</description>
+        <baseCost>10000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>FCP_Research_Synth_TierIII</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <tab>FCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
+    <!-- Signal Intercept -->
+
+    <ResearchProjectDef MayRequire="ludeon.rimworld.biotech">
+        <defName>FCP_Research_Institute_SignalIntercept</defName>
+        <label>signal intercept</label>
+        <description>Reverse-engineering the Institute's relay frequency without their cooperation. Slower and cruder than the real thing, and there's no telling what's waiting on the other end when the beam finally locks on.</description>
+        <baseCost>16000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>FCP_Research_Synth_TierIII</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <tab>FCP_Faction_Research</tab>
+    </ResearchProjectDef>
+
 </Defs>

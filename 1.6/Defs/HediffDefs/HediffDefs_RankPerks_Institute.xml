@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Institute Rank Perks __________-->
+
+    <HediffDef Name="FCP_Hediff_Institute_RankBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+    </HediffDef>
+
+    <!-- Division Science -->
+
+    <HediffDef ParentName="FCP_Hediff_Institute_RankBase">
+        <defName>FCP_Hediff_Institute_Rank_Researcher</defName>
+        <label>research training</label>
+        <description>Junior research work has sharpened this pawn's methodology.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ResearchSpeed>0.05</ResearchSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Institute_RankBase">
+        <defName>FCP_Hediff_Institute_Rank_SeniorResearcher</defName>
+        <label>senior research training</label>
+        <description>Leading an independent research line has sharpened this pawn's methodology further.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ResearchSpeed>0.08</ResearchSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Institute_RankBase">
+        <defName>FCP_Hediff_Institute_Rank_DivisionHead</defName>
+        <label>division head training</label>
+        <description>Running a whole division's research agenda leaves little patience for imprecision.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ResearchSpeed>0.12</ResearchSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Synth Retention -->
+
+    <HediffDef ParentName="FCP_Hediff_Institute_RankBase">
+        <defName>FCP_Hediff_Institute_Rank_SRBAgent</defName>
+        <label>SRB training</label>
+        <description>Bureau containment drills have sharpened this pawn's aim.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Institute_RankBase">
+        <defName>FCP_Hediff_Institute_Rank_FieldCourser</defName>
+        <label>field courser training</label>
+        <description>Solo surface deployments have sharpened this pawn's aim further.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Institute_RankBase">
+        <defName>FCP_Hediff_Institute_Rank_SRBDirector</defName>
+        <label>SRB director training</label>
+        <description>Authorizing courser deployments personally has sharpened this pawn's own aim too.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Directorate Council -->
+
+    <HediffDef ParentName="FCP_Hediff_Institute_RankBase">
+        <defName>FCP_Hediff_Institute_Rank_DirectorsCouncil</defName>
+        <label>Directorate training</label>
+        <description>Sitting on the Directorate demands fluency in both the lab and the field.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ResearchSpeed>0.1</ResearchSpeed>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>FCP_Hediff_Institute_DirectorsCouncil_Presence</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Directorate presence</label>
+        <description>A Directorate council member is nearby. Whoever's on duty is a little sharper for it.</description>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>310</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.2</MoveSpeed>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>0.05</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>FCP_Hediff_Institute_DirectorsCouncil_Rally</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>on directive</label>
+        <description>The Directorate has issued a standing order to hold the line. Steady hands, quick feet.</description>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>2500</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>1</MoveSpeed>
+                    <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>0.1</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

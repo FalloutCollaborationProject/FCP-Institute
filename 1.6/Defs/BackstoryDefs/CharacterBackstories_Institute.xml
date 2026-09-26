@@ -209,7 +209,7 @@
         <defName>FCP_Character_Backstory_AlanBinet_Adult</defName>
         <title>Head of Robotics</title>
         <titleShort>Robotics</titleShort>
-        <baseDesc>[PAWN_nameDef] leads the Robotics division and is credited within the Institute as the principal architect of the third-generation synth line. [PAWN_pronoun] speaks about the units [PAWN_pronoun] designed the way an engineer speaks about a bridge - proud of the specifications, uninterested in whether the bridge has opinions.</baseDesc>
+        <baseDesc>[PAWN_nameDef] leads the Robotics division and is credited within the Institute as the principal architect of the third-generation synth line. [PAWN_pronoun] speaks about the units [PAWN_pronoun] designed the way an engineer speaks about a bridge, proud of the specifications and uninterested in whether the bridge has opinions.</baseDesc>
         <bodyTypeMale>Male</bodyTypeMale>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <slot>Adulthood</slot>

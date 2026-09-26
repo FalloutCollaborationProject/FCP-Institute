@@ -222,4 +222,29 @@
         <possessions />
     </BackstoryDef>
 
+    <!-- Courser -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Synth_Courser</defName>
+        <identifier>FCP_Backstory_Synth_Courser</identifier>
+        <slot>Adulthood</slot>
+        <title>Courser</title>
+        <titleShort>Courser</titleShort>
+        <description>[PAWN_nameDef] was built and trained for one purpose: find whatever the Institute wants found, and remove whatever stands in the way. [PAWN_pronoun] has never failed a retrieval and has never been asked to explain how.</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>5</Melee>
+            <Intellectual>3</Intellectual>
+            <Social>-3</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Synth_Courser</li>
+        </spawnCategories>
+        <bodyTypeFemale>Male</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
 </Defs>

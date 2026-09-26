@@ -9,7 +9,7 @@
         <defName>FCP_Faction_Institute</defName>
         <label>The Institute</label>
         <description>The Institute is what remains of the old world's scientific establishment, operating from a hidden facility beneath the Commonwealth and observing the surface through synthetic proxies it rarely acknowledges building. Its researchers view the wasteland above as a data set, not a home, and its policy toward outsiders is dictated by whatever a given division head decides is efficient. Synths sent topside carry out relocation, retrieval, or replacement orders without explanation, and the Institute answers questions about its own activities only when it decides the answer serves it. Advancement inside its ranks is measured in results, not loyalty, and both are watched closely.</description>
-        <basicMemberKind>FCP_Pawnkind_Institute_Security</basicMemberKind>
+        <basicMemberKind>FCP_Pawnkind_Institute_Personnel</basicMemberKind>
         <colorSpectrum>
             <li>(0.35, 0.55, 0.65)</li>
         </colorSpectrum>
@@ -19,7 +19,7 @@
         <pawnSingular>operative</pawnSingular>
         <pawnsPlural>the Institute</pawnsPlural>
         <categoryTag>Outlander</categoryTag>
-        <settlementGenerationWeight>0.05</settlementGenerationWeight>
+        <settlementGenerationWeight>0</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <canSiege>false</canSiege>
         <canStageAttacks>true</canStageAttacks>
@@ -34,6 +34,32 @@
         <arrivalModeWhitelist>
             <li>FCP_ArrivalMode_InstituteRelay</li>
         </arrivalModeWhitelist>
+        <baseTraderKinds>
+            <li>FCP_TraderKind_Institute_Requisition</li>
+        </baseTraderKinds>
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>The Technocracy</ideoName>
+        <ideoDescription>The Institute's official worldview: progress is measured in results, not sentiment, and the people equipped to pursue it don't answer to the people who aren't.</ideoDescription>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FCP_Meme_Institute_Technocracy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FCP_Meme_Institute_Coursers</li>
+        </forcedMemes>
+        <modExtensions Inherit="False">
+            <!-- Make them hostile to the Railroad -->
+            <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li MayRequire="Rick.FCP.Railroad">FCP_Faction_Railroad</li>
+                    <li MayRequire="Rick.FCP.BOS">FCP_Faction_BoS</li>
+                    <li MayRequire="Rick.FCP.Minutemen">FCP_Faction_Commonwealth_Minutemen</li>
+                </hostileFactionDefs>
+            </li>
+            <!-- Enlistment -->
+            <li Class="FCP.Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>FCP_Enlistment_Institute</li>
+                </enlistOptionsDefs>
+            </li>
+        </modExtensions>
         <backstoryFilters>
             <li>
                 <categories>
@@ -58,7 +84,8 @@
                     <li>EmergeFromWater</li>
                 </disallowedStrategies>
                 <options>
-                    <FCP_Pawnkind_Institute_Security>10</FCP_Pawnkind_Institute_Security>
+                    <FCP_Pawnkind_Institute_CombatSynth>10</FCP_Pawnkind_Institute_CombatSynth>
+                    <FCP_Pawnkind_Institute_Courser>3</FCP_Pawnkind_Institute_Courser>
                 </options>
             </li>
             <li>
@@ -71,7 +98,8 @@
                 <kindDef>Settlement</kindDef>
                 <options>
                     <FCP_Pawnkind_Institute_Personnel>15</FCP_Pawnkind_Institute_Personnel>
-                    <FCP_Pawnkind_Institute_Security>10</FCP_Pawnkind_Institute_Security>
+                    <FCP_Pawnkind_Institute_CombatSynth>10</FCP_Pawnkind_Institute_CombatSynth>
+                    <FCP_Pawnkind_Institute_Courser>2</FCP_Pawnkind_Institute_Courser>
                 </options>
             </li>
         </pawnGroupMakers>

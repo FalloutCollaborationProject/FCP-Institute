@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--__________ Institute Enlistment __________-->
+
+	<FCP_Institute_Enlist_Letter_Title>A Standing Offer</FCP_Institute_Enlist_Letter_Title>
+	<FCP_Institute_Enlist_Letter_Label>Institute Contact</FCP_Institute_Enlist_Letter_Label>
+	<FCP_Institute_Enlist_Button_Label>Enlist with the Institute</FCP_Institute_Enlist_Button_Label>
+	<FCP_Institute_Enlist_Button_Desc>Take a posting within the Institute. Pay is generous, the work is exacting, and nobody above you explains themselves twice.</FCP_Institute_Enlist_Button_Desc>
+	<FCP_Institute_Enlist_Requrements_Not_Satisfied>The Institute doesn't recruit strangers. Build more standing with them first.</FCP_Institute_Enlist_Requrements_Not_Satisfied>
+	<FCP_Institute_Enlisted_To_Hostile_Faction>{0} won't enlist with a faction your colony is at war with.</FCP_Institute_Enlisted_To_Hostile_Faction>
+	<FCP_Institute_Enlisted_With_Key>Enlisted with the Institute</FCP_Institute_Enlisted_With_Key>
+
+	<!-- Missions -->
+
+	<FCP_Institute_Missions_Label>Directorate Taskings</FCP_Institute_Missions_Label>
+	<FCP_Institute_Missions_Desc>Accept tasking assignments from the Directorate and collect payment once they're closed out.</FCP_Institute_Missions_Desc>
+	<FCP_Institute_Menu_Missions_Desc>Available taskings from the Directorate.</FCP_Institute_Menu_Missions_Desc>
+	<FCP_Institute_Menu_Missions_Select_Quest>Select a Tasking</FCP_Institute_Menu_Missions_Select_Quest>
+	<FCP_Institute_Menu_Missions_Start_Quest>Accept</FCP_Institute_Menu_Missions_Start_Quest>
+	<FCP_Institute_Menu_Missions_Collect_Bounty>Collect Payment</FCP_Institute_Menu_Missions_Collect_Bounty>
+
+	<!-- Salary -->
+
+	<FCP_Institute_Salary_Label>Standing Salary</FCP_Institute_Salary_Label>
+	<FCP_Institute_Salary_Desc>A regular payment for services rendered, deducted from a budget nobody outside the Directorate has ever seen in full.</FCP_Institute_Salary_Desc>
+
+	<!-- Storage -->
+
+	<FCP_Institute_Storage_Label>Institute Storage</FCP_Institute_Storage_Label>
+	<FCP_Institute_Storage_Desc>Store and withdraw goods from the Institute's own stockpiles.</FCP_Institute_Storage_Desc>
+
+	<!-- Work Options -->
+
+	<FCP_Institute_AdvancedSystems_Label>Advanced Systems Support</FCP_Institute_AdvancedSystems_Label>
+	<FCP_Institute_AdvancedSystems_Desc>Assist with reactor and synth-chassis research. Builds Intellectual and Crafting skill over time.</FCP_Institute_AdvancedSystems_Desc>
+	<FCP_Institute_SRBTraining_Label>SRB Field Training</FCP_Institute_SRBTraining_Label>
+	<FCP_Institute_SRBTraining_Desc>Drill under Synth Retention Bureau instructors. Builds Shooting and Melee skill over time.</FCP_Institute_SRBTraining_Desc>
+	<FCP_Institute_Containment_Label>Containment Ward Duty</FCP_Institute_Containment_Label>
+	<FCP_Institute_Containment_Desc>Tend to caravan members with Institute-grade medicine and a noticeably higher standard of care.</FCP_Institute_Containment_Desc>
+
+	<!-- Asset Exchange -->
+
+	<FCP_Institute_Turn_In_Label>Asset Exchange</FCP_Institute_Turn_In_Label>
+	<FCP_Institute_Turn_In_Desc>Hand over a captured prisoner to the Institute for a price, no questions asked about where they came from.</FCP_Institute_Turn_In_Desc>
+	<FCP_Institute_Turn_In_Trader_Name>Institute Asset Exchange</FCP_Institute_Turn_In_Trader_Name>
+
+	<!-- Resign -->
+
+	<FCP_Institute_Resign_Menu_Text>Resigning ends your standing with the Institute immediately. Are you sure?</FCP_Institute_Resign_Menu_Text>
+	<FCP_Institute_Resign_Letter_Title>Contract Terminated</FCP_Institute_Resign_Letter_Title>
+	<FCP_Institute_Resign_Letter_Label>Institute Contact</FCP_Institute_Resign_Letter_Label>
+	<FCP_Institute_Resign_Button_Label>Resign</FCP_Institute_Resign_Button_Label>
+	<FCP_Institute_Resign_Button_Desc>End your standing with the Institute. They won't ask you to reconsider.</FCP_Institute_Resign_Button_Desc>
+
+	<!-- Kicked Out -->
+
+	<FCP_Institute_Kick_Out_Letter_Title>Reassigned</FCP_Institute_Kick_Out_Letter_Title>
+	<FCP_Institute_Kick_Out_Label_Title>Institute Contact</FCP_Institute_Kick_Out_Label_Title>
+
+	<!-- Reinforcements -->
+
+	<FCP_Institute_Reinforcements_Button_Label>Request Backup</FCP_Institute_Reinforcements_Button_Label>
+	<FCP_Institute_Reinforcements_Button_Desc>Call in Institute personnel to assist against a nearby threat, at a cost to your standing.</FCP_Institute_Reinforcements_Button_Desc>
+
+</LanguageData>

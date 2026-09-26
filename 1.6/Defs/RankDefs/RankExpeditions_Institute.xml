@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Institute Rank Expeditions __________-->
+
+    <!-- Loot -->
+
+    <ThingSetMakerDef>
+        <defName>FCP_InstituteExpeditionLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                        <li>Neutroamine</li>
+                        <li>Steel</li>
+                        <li>FCP_SynthComponents</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <!-- Fieldwork -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Institute_Fieldwork</defName>
+        <label>surface fieldwork</label>
+        <description>A short surface trip to collect samples or observe a site the Institute has flagged for study.</description>
+        <durationDays>3~5</durationDays>
+        <xpReward>
+            <Intellectual>200</Intellectual>
+        </xpReward>
+        <lootMaker>FCP_InstituteExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>50~150</lootMarketValueRange>
+        <siteRevealChance>0.15</siteRevealChance>
+        <failureChance>0.12</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Institute_Fieldwork_1</li>
+            <li>FCP_Rank_Expedition_Institute_Fieldwork_2</li>
+            <li>FCP_Rank_Expedition_Institute_Fieldwork_3</li>
+            <li>FCP_Rank_Expedition_Institute_Fieldwork_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+    <!-- Retrieval -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Institute_Retrieval</defName>
+        <label>retrieval operation</label>
+        <description>A tasked trip to recover an asset, a specimen, or a synth the Institute wants back on its own terms.</description>
+        <durationDays>6~8</durationDays>
+        <xpReward>
+            <Intellectual>400</Intellectual>
+            <Shooting>200</Shooting>
+        </xpReward>
+        <lootMaker>FCP_InstituteExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>150~350</lootMarketValueRange>
+        <siteRevealChance>0.25</siteRevealChance>
+        <failureChance>0.1</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Institute_Retrieval_1</li>
+            <li>FCP_Rank_Expedition_Institute_Retrieval_2</li>
+            <li>FCP_Rank_Expedition_Institute_Retrieval_3</li>
+            <li>FCP_Rank_Expedition_Institute_Retrieval_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+    <!-- Directive -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Institute_Directive</defName>
+        <label>Directorate directive</label>
+        <description>A long-range operation carried out on the Directorate's own authority, the kind that decides how a whole division's year goes.</description>
+        <durationDays>10~14</durationDays>
+        <xpReward>
+            <Intellectual>800</Intellectual>
+            <Shooting>400</Shooting>
+            <Social>200</Social>
+        </xpReward>
+        <lootMaker>FCP_InstituteExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>500~900</lootMarketValueRange>
+        <siteRevealChance>0.5</siteRevealChance>
+        <failureChance>0.05</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Institute_Directive_1</li>
+            <li>FCP_Rank_Expedition_Institute_Directive_2</li>
+            <li>FCP_Rank_Expedition_Institute_Directive_3</li>
+            <li>FCP_Rank_Expedition_Institute_Directive_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+</Defs>

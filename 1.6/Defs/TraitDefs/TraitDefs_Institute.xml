@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraitDef>
+        <defName>FCP_Trait_Institute_Loyalist</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Institute loyalist</label>
+                <description>{PAWN_nameDef} still answers first to the Directorate, whatever else has happened since. Synths are property and tools, not people, and anyone who says otherwise is either naive or dangerous.</description>
+                <statFactors>
+                    <SocialImpact>0.9</SocialImpact>
+                </statFactors>
+                <statOffsets>
+                    <ResearchSpeed>0.10</ResearchSpeed>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li MayRequire="Rick.FCP.Railroad">FCP_Trait_Railroad_Sympathizer</li>
+            <li MayRequire="Rick.FCP.BOS">FCP_Trait_BoS_Zealot</li>
+        </conflictingTraits>
+    </TraitDef>
+
+</Defs>

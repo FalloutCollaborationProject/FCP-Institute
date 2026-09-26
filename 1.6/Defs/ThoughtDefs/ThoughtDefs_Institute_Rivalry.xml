@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>FCP_Thought_InstituteLoyalist_DislikesRailroad</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>FCP.Core.Thoughts.ThoughtWorker_InstituteLoyalist_DislikesRailroad</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Railroad sympathizer</label>
+                <description>{0} would hand every synth in the Commonwealth a rifle and a bus ticket if they could. Sentiment like that gets people killed.</description>
+                <baseOpinionOffset>-10</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>FCP_Thought_InstituteLoyalist_DislikesBoS</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>FCP.Core.Thoughts.ThoughtWorker_InstituteLoyalist_DislikesBoS</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Brotherhood zealot</label>
+                <description>{0} thinks anything built by the Institute deserves a bullet or a bonfire. There's no reasoning with that kind of certainty.</description>
+                <baseOpinionOffset>-10</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

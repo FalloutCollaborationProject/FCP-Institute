@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FCP.Ranks.RankTrackDef>
+        <defName>FCP_RankTrack_Institute</defName>
+        <label>Divisional Standing</label>
+        <iconPath>World_Icon/Institute_Icon/FCP_Institute_Icon</iconPath>
+        <rootTier>FCP_Rank_Institute_Trainee</rootTier>
+        <owningFaction>FCP_Faction_Institute</owningFaction>
+        <allowsGearMaintenance>true</allowsGearMaintenance>
+        <collectiveNoun>the Institute</collectiveNoun>
+        <drillLabel>Field Drill...</drillLabel>
+        <drillDesc>Drill with any colonist. Both stop, stand apart, and run through combat or containment procedure. Both gain skill XP. Once per day.</drillDesc>
+        <studyLabel>Peer Review...</studyLabel>
+        <studyDesc>Review research or field notes with another Institute colonist. Both gain skill XP. Once per day.</studyDesc>
+        <inspectLabel>Compliance Check...</inspectLabel>
+        <inspectDesc>Inspect a lower-ranked colonist's equipment and lab discipline. Good standards earn a commendation, lapses earn a reprimand.</inspectDesc>
+        <punishLabel>Assign Remedial Duty...</punishLabel>
+        <punishDesc>Assign a lower-ranked colonist a stretch of remedial duty for a lapse, souring their mood. Once per day per colonist.</punishDesc>
+        <rallyLabel>Division Alert</rallyLabel>
+        <rallyDesc>Alert every combat-ranked member of {0} on this map with a burst of speed and focus. Once every few days.</rallyDesc>
+        <fallInLabel>Convene</fallInLabel>
+        <fallInDesc>Order {0} to convene behind you, up to four deep, interrupting whatever they're doing. They hold until dismissed.</fallInDesc>
+        <dismissLabel>Adjourn</dismissLabel>
+        <dismissDesc>Adjourn {0} from formation, letting them return to their duties.</dismissDesc>
+    </FCP.Ranks.RankTrackDef>
+
+</Defs>

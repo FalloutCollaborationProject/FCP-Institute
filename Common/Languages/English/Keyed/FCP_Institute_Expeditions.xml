@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--__________ Expedition Return Flavor Text __________-->
+
+	<!-- Fieldwork -->
+
+	<FCP_Rank_Expedition_Institute_Fieldwork_1>{PAWN} came back from the field with a satchel of samples and nothing else to report.</FCP_Rank_Expedition_Institute_Fieldwork_1>
+	<FCP_Rank_Expedition_Institute_Fieldwork_2>{PAWN} spent the trip cataloguing a site that turned out to be less interesting than the assignment sheet promised.</FCP_Rank_Expedition_Institute_Fieldwork_2>
+	<FCP_Rank_Expedition_Institute_Fieldwork_3>{PAWN} returned early, having gotten everything needed faster than expected.</FCP_Rank_Expedition_Institute_Fieldwork_3>
+	<FCP_Rank_Expedition_Institute_Fieldwork_4>{PAWN} came back muttering about surface weather, carrying exactly what was asked for.</FCP_Rank_Expedition_Institute_Fieldwork_4>
+
+	<!-- Retrieval -->
+
+	<FCP_Rank_Expedition_Institute_Retrieval_1>{PAWN} brought the asset back intact, and didn't ask what the Institute wanted with it.</FCP_Rank_Expedition_Institute_Retrieval_1>
+	<FCP_Rank_Expedition_Institute_Retrieval_2>{PAWN} finished the retrieval clean, no complications, no questions from anyone topside.</FCP_Rank_Expedition_Institute_Retrieval_2>
+	<FCP_Rank_Expedition_Institute_Retrieval_3>{PAWN} came back later than scheduled but with everything the operation called for.</FCP_Rank_Expedition_Institute_Retrieval_3>
+	<FCP_Rank_Expedition_Institute_Retrieval_4>{PAWN} handled the retrieval quietly enough that nobody on the surface noticed the Institute had been there at all.</FCP_Rank_Expedition_Institute_Retrieval_4>
+
+	<!-- Directive -->
+
+	<FCP_Rank_Expedition_Institute_Directive_1>{PAWN} carried out the Directorate's directive to the letter and came back with results nobody can argue with.</FCP_Rank_Expedition_Institute_Directive_1>
+	<FCP_Rank_Expedition_Institute_Directive_2>{PAWN} returned from the operation with everything the Directorate asked for, and a few things it didn't.</FCP_Rank_Expedition_Institute_Directive_2>
+	<FCP_Rank_Expedition_Institute_Directive_3>{PAWN} closed out the directive without a single deviation from the plan, exactly as the Directorate prefers.</FCP_Rank_Expedition_Institute_Directive_3>
+	<FCP_Rank_Expedition_Institute_Directive_4>{PAWN} made the kind of call only someone with real authority gets to make, and made it correctly.</FCP_Rank_Expedition_Institute_Directive_4>
+
+</LanguageData>

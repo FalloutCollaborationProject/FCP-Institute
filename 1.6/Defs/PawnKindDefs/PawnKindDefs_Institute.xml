@@ -34,18 +34,71 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <forcedTraits>
+            <FCP_Trait_Institute_Loyalist>0</FCP_Trait_Institute_Loyalist>
+        </forcedTraits>
     </PawnKindDef>
 
-    <!-- Institute Security -->
+    <!-- Institute Combat Synth Base -->
 
-    <PawnKindDef ParentName="FCP_InstituteKindBase">
-        <defName>FCP_Pawnkind_Institute_Security</defName>
-        <label>Institute security</label>
-        <combatPower>110</combatPower>
+    <PawnKindDef Name="FCP_InstituteCombatSynthBase" ParentName="FCP_InstituteKindBase" Abstract="true">
+        <useFactionXenotypes>false</useFactionXenotypes>
         <requiredWorkTags>
             <li>Violent</li>
         </requiredWorkTags>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <!-- Combat Synth -->
+
+    <PawnKindDef ParentName="FCP_InstituteCombatSynthBase">
+        <defName>FCP_Pawnkind_Institute_CombatSynth</defName>
+        <label>Institute combat synth</label>
+        <combatPower>120</combatPower>
         <weaponMoney>800~1200</weaponMoney>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FCP_Xenotype_Synth_GenII>1</FCP_Xenotype_Synth_GenII>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_GenII</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Courser -->
+
+    <PawnKindDef ParentName="FCP_InstituteCombatSynthBase">
+        <defName>FCP_Pawnkind_Institute_Courser</defName>
+        <label>courser</label>
+        <combatPower>170</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <apparelMoney>900~1400</apparelMoney>
+        <weaponMoney>1400~2000</weaponMoney>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner>1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_Courser</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
     </PawnKindDef>
 
     <!-- Institute Personnel -->
@@ -56,6 +109,33 @@
         <combatPower>40</combatPower>
         <apparelMoney>300~600</apparelMoney>
         <weaponMoney>0~0</weaponMoney>
+    </PawnKindDef>
+
+    <!-- Synth Requisition Officer -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Pawnkind_Institute_RequisitionOfficer</defName>
+        <label>synth requisition officer</label>
+        <combatPower>40</combatPower>
+        <apparelMoney>300~600</apparelMoney>
+        <weaponMoney>0~0</weaponMoney>
+        <trader>true</trader>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FCP_Xenotype_Synth_GenII>1</FCP_Xenotype_Synth_GenII>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_GenII</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
     </PawnKindDef>
 
 </Defs>

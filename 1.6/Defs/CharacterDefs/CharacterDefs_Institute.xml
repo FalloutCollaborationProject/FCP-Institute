@@ -184,4 +184,32 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
+    <!-- X6-88 -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_X6_88</defName>
+        <pawnKind>FCP_Pawnkind_Institute_Courser</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>X6-88</firstName>
+                <lastName />
+                <gender>Male</gender>
+                <age>32</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(166, 133, 102)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_FieldCourser</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
 </Defs>

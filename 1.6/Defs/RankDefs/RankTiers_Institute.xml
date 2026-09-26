@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Institute Ranks __________-->
+
+    <!--_____ Trunk _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_Trainee</defName>
+        <label>trainee</label>
+        <description>Newly assigned within the Institute and still being evaluated for which division best fits their aptitude.</description>
+        <nextTierOptions>
+            <li>FCP_Rank_Institute_Researcher</li>
+            <li>FCP_Rank_Institute_SRBAgent</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Path of Division Science _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_Researcher</defName>
+        <label>researcher</label>
+        <description>Assigned to a division's junior research staff, running assays and drafting reports someone senior will take credit for.</description>
+        <pathName>Division Science</pathName>
+        <minDaysInRank>5</minDaysInRank>
+        <skillRequirements>
+            <Intellectual>6</Intellectual>
+        </skillRequirements>
+        <grantHediff>FCP_Hediff_Institute_Rank_Researcher</grantHediff>
+        <trainingXpPerHour>
+            <Intellectual>500</Intellectual>
+            <Crafting>100</Crafting>
+        </trainingXpPerHour>
+        <discipline>Scholarly</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Institute_SeniorResearcher</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_SeniorResearcher</defName>
+        <label>senior researcher</label>
+        <description>Trusted with an independent research line and a small staff of their own, answerable only to the division head.</description>
+        <minDaysInRank>10</minDaysInRank>
+        <skillRequirements>
+            <Intellectual>11</Intellectual>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <minSquiresTrained>1</minSquiresTrained>
+        <grantHediff>FCP_Hediff_Institute_Rank_SeniorResearcher</grantHediff>
+        <trainingXpPerHour>
+            <Intellectual>650</Intellectual>
+            <Crafting>200</Crafting>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Institute_Fieldwork</expedition>
+        <discipline>Scholarly</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Institute_DivisionHead</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_DivisionHead</defName>
+        <label>division head</label>
+        <description>Runs an entire division's research agenda and reports directly to the Directorate, the way Madison Li or Clayton Holdren do.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Intellectual>16</Intellectual>
+            <Social>6</Social>
+        </skillRequirements>
+        <minSquiresTrained>2</minSquiresTrained>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Institute_Rank_DivisionHead</grantHediff>
+        <trainingXpPerHour>
+            <Intellectual>800</Intellectual>
+            <Social>200</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Institute_Retrieval</expedition>
+        <discipline>Scholarly</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Institute_DirectorsCouncil</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Path of Synth Retention _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_SRBAgent</defName>
+        <label>SRB agent</label>
+        <description>Assigned to the Synth Retention Bureau, handling internal containment and the occasional surface retrieval.</description>
+        <pathName>Synth Retention</pathName>
+        <minDaysInRank>5</minDaysInRank>
+        <skillRequirements>
+            <Shooting>6</Shooting>
+        </skillRequirements>
+        <grantHediff>FCP_Hediff_Institute_Rank_SRBAgent</grantHediff>
+        <trainingXpPerHour>
+            <Shooting>500</Shooting>
+            <Melee>100</Melee>
+        </trainingXpPerHour>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Institute_FieldCourser</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_FieldCourser</defName>
+        <label>field courser</label>
+        <description>Cleared for solo surface deployment, retrieving or eliminating whatever the Bureau flags without needing backup, the way X6-88 does.</description>
+        <minDaysInRank>10</minDaysInRank>
+        <skillRequirements>
+            <Shooting>11</Shooting>
+            <Melee>5</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>1</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Institute_Rank_FieldCourser</grantHediff>
+        <trainingXpPerHour>
+            <Shooting>700</Shooting>
+            <Melee>150</Melee>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Institute_Fieldwork</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Institute_SRBDirector</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_SRBDirector</defName>
+        <label>SRB director</label>
+        <description>Runs the Synth Retention Bureau's field operations, authorizing every courser deployment, the way Justin Ayo and Alana Secord do.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Shooting>16</Shooting>
+            <Social>6</Social>
+        </skillRequirements>
+        <minSquiresTrained>2</minSquiresTrained>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Institute_Rank_SRBDirector</grantHediff>
+        <trainingXpPerHour>
+            <Shooting>900</Shooting>
+            <Social>200</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Institute_Retrieval</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>FCP_Rank_Institute_DirectorsCouncil</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Summit _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Institute_DirectorsCouncil</defName>
+        <label>Directorate council member</label>
+        <description>Sits on the Directorate itself, weighing every division's proposals against the Institute's single standard: does it move the work forward.</description>
+        <minDaysInRank>30</minDaysInRank>
+        <skillRequirements>
+            <Social>12</Social>
+        </skillRequirements>
+        <minMissionsCompleted>3</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Institute_Rank_DirectorsCouncil</grantHediff>
+        <trainingXpPerHour>
+            <Intellectual>700</Intellectual>
+            <Shooting>700</Shooting>
+            <Social>200</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Institute_Directive</expedition>
+        <isCommanderTier>true</isCommanderTier>
+        <auraRadius>16</auraRadius>
+        <auraHediff>FCP_Hediff_Institute_DirectorsCouncil_Presence</auraHediff>
+        <rallyHediff>FCP_Hediff_Institute_DirectorsCouncil_Rally</rallyHediff>
+        <rallyCooldownDays>2</rallyCooldownDays>
+    </FCP.Ranks.RankTierDef>
+
+</Defs>

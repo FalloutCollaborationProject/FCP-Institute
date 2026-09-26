@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Institute Trader Kinds __________-->
+
+    <!-- Asset Exchange -->
+
+    <TraderKindDef>
+        <defName>FCP_Caravan_Institute_Asset_Exchange</defName>
+        <label>Institute Asset Exchange</label>
+        <category>Slaver</category>
+        <stockGenerators>
+
+            <!--__ Assets __-->
+
+            <li Class="StockGenerator_Slaves">
+                <respectPopulationIntent>false</respectPopulationIntent>
+                <countRange>2~4</countRange>
+            </li>
+
+            <!--__ Currency __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>1000~1800</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+
+    <!-- Synth Requisition Officer -->
+
+    <TraderKindDef>
+        <defName>FCP_TraderKind_Institute_Requisition</defName>
+        <label>synth requisition officer</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>800~1500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Item_Fusion</thingDef>
+                <countRange>4~10</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_SynthComponents</thingDef>
+                <countRange>10~20</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentSpacer</thingDef>
+                <countRange>4~10</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.EnergyWeapons">
+                <thingDef>FCP_Gun_Plasma</thingDef>
+                <countRange>1~2</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+
+</Defs>
