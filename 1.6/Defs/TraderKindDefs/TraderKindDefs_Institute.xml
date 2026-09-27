@@ -38,7 +38,7 @@
                 <countRange>800~1500</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>FCP_Item_Fusion</thingDef>
+                <thingDef>FCP_Item_Fusion_Core</thingDef>
                 <countRange>4~10</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
@@ -50,7 +50,7 @@
                 <countRange>4~10</countRange>
             </li>
             <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.EnergyWeapons">
-                <thingDef>FCP_Gun_Plasma</thingDef>
+                <thingDef>FCP_Gun_Plasma_Rifle</thingDef>
                 <countRange>1~2</countRange>
             </li>
         </stockGenerators>
