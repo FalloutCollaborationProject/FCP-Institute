@@ -37,9 +37,10 @@ internal static class Patch_CaravanEnterMap_SpawnCellGetter
     new[] { typeof(Pawn), typeof(FCP.Ranks.ExpeditionData) })]
 internal static class Patch_ExpeditionReturn
 {
-    private static void Postfix(Pawn pawn)
+    private static void Postfix(Pawn pawn, bool __result)
     {
-        SynthReplacementUtility.TryReplace(pawn);
+        if (__result)
+            SynthReplacementUtility.TryReplace(pawn);
     }
 }
 

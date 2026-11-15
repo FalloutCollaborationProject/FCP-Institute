@@ -49,14 +49,22 @@ public class ChoiceLetter_InstituteRelocationOffer : ChoiceLetter
         if (target.Spawned)
             target.DeSpawn();
 
-        Find.WorldPawns.PassToWorld(target, PawnDiscardDecideMode.KeepForever);
+        target.GetCaravan()?.RemovePawn(target);
+        if (!target.IsWorldPawn())
+            Find.WorldPawns.PassToWorld(target, PawnDiscardDecideMode.KeepForever);
         target.SetFaction(institute);
 
-        IntVec3 dropSpot = DropCellFinder.TradeDropSpot(map);
-        ThingSetMakerParams rewardParams = default;
-        rewardParams.totalMarketValueRange = new FloatRange(rewardMarketValue * 0.8f, rewardMarketValue * 1.2f);
-        List<Thing> reward = ThingSetMakerDefOf.Reward_ItemsStandard.root.Generate(rewardParams);
-        DropPodUtility.DropThingsNear(dropSpot, map, reward);
+        Map dropMap = map != null && Find.Maps.Contains(map) ? map : Find.AnyPlayerHomeMap;
+        LookTargets lookTargets = null;
+        if (dropMap != null)
+        {
+            IntVec3 dropSpot = DropCellFinder.TradeDropSpot(dropMap);
+            ThingSetMakerParams rewardParams = default;
+            rewardParams.totalMarketValueRange = new FloatRange(rewardMarketValue * 0.8f, rewardMarketValue * 1.2f);
+            List<Thing> reward = ThingSetMakerDefOf.Reward_ItemsStandard.root.Generate(rewardParams);
+            DropPodUtility.DropThingsNear(dropSpot, dropMap, reward);
+            lookTargets = new TargetInfo(dropSpot, dropMap);
+        }
 
         institute.TryAffectGoodwillWith(Faction.OfPlayer, goodwillGain, canSendHostilityLetter: false);
 
@@ -64,7 +72,7 @@ public class ChoiceLetter_InstituteRelocationOffer : ChoiceLetter
             "FCP_InstituteRelocation_ConfirmTitle".Translate(),
             "FCP_InstituteRelocation_ConfirmText".Translate(target.LabelShortCap),
             LetterDefOf.NeutralEvent,
-            new TargetInfo(dropSpot, map));
+            lookTargets);
 
         Find.LetterStack.RemoveLetter(this);
     }
