@@ -17,6 +17,10 @@
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>55</maxGenerationAge>
         <apparelMoney>500~800</apparelMoney>
+        <apparelTags>
+            <li>FCP_Institute_Apparel</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <weaponMoney>500~900</weaponMoney>
         <weaponTags>
             <li>SpacerGun</li>
@@ -43,6 +47,10 @@
 
     <PawnKindDef Name="FCP_InstituteCombatSynthBase" ParentName="FCP_InstituteKindBase" Abstract="true">
         <useFactionXenotypes>false</useFactionXenotypes>
+        <apparelMoney>0</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>FCP_Institute_Synth_Apparel</li>
+        </apparelTags>
         <requiredWorkTags>
             <li>Violent</li>
         </requiredWorkTags>
@@ -51,12 +59,67 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <!-- Combat Synth -->
+    <!-- Gen I Combat Synth Base -->
 
-    <PawnKindDef ParentName="FCP_InstituteCombatSynthBase">
-        <defName>FCP_Pawnkind_Institute_CombatSynth</defName>
-        <label>Institute combat synth</label>
-        <combatPower>120</combatPower>
+    <PawnKindDef Name="FCP_InstituteSynthGenIBase" ParentName="FCP_InstituteCombatSynthBase" Abstract="true">
+        <itemQuality>Normal</itemQuality>
+        <weaponMoney>800~1000</weaponMoney>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FCP_Xenotype_Synth_GenI>1</FCP_Xenotype_Synth_GenI>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_GenI</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Light Gen I Synth -->
+
+    <PawnKindDef ParentName="FCP_InstituteSynthGenIBase">
+        <defName>FCP_Pawnkind_Institute_Synth_GenI_Light</defName>
+        <label>light gen 1 synth</label>
+        <combatPower>70</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Armor_Light</li>
+            <li>FCP_Apparel_Synth_Helmet_Light</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!-- Sturdy Gen I Synth -->
+
+    <PawnKindDef ParentName="FCP_InstituteSynthGenIBase">
+        <defName>FCP_Pawnkind_Institute_Synth_GenI_Sturdy</defName>
+        <label>sturdy gen 1 synth</label>
+        <combatPower>85</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Armor_Sturdy</li>
+            <li>FCP_Apparel_Synth_Helmet_Sturdy</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!-- Heavy Gen I Synth -->
+
+    <PawnKindDef ParentName="FCP_InstituteSynthGenIBase">
+        <defName>FCP_Pawnkind_Institute_Synth_GenI_Heavy</defName>
+        <label>heavy gen 1 synth</label>
+        <combatPower>100</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Armor_Heavy</li>
+            <li>FCP_Apparel_Synth_Helmet_Heavy</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!-- Gen II Combat Synth Base -->
+
+    <PawnKindDef Name="FCP_InstituteSynthGenIIBase" ParentName="FCP_InstituteCombatSynthBase" Abstract="true">
         <weaponMoney>800~1200</weaponMoney>
         <xenotypeSet>
             <xenotypeChances>
@@ -75,6 +138,45 @@
         </backstoryFiltersOverride>
     </PawnKindDef>
 
+    <!-- Light Gen II Synth -->
+
+    <PawnKindDef ParentName="FCP_InstituteSynthGenIIBase">
+        <defName>FCP_Pawnkind_Institute_Synth_GenII_Light</defName>
+        <label>light gen 2 synth</label>
+        <combatPower>100</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Uniform</li>
+            <li>FCP_Apparel_Synth_Armor_Light</li>
+            <li>FCP_Apparel_Synth_Helmet_Light</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!-- Sturdy Gen II Synth -->
+
+    <PawnKindDef ParentName="FCP_InstituteSynthGenIIBase">
+        <defName>FCP_Pawnkind_Institute_Synth_GenII_Sturdy</defName>
+        <label>sturdy gen 2 synth</label>
+        <combatPower>120</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Uniform</li>
+            <li>FCP_Apparel_Synth_Armor_Sturdy</li>
+            <li>FCP_Apparel_Synth_Helmet_Sturdy</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!-- Heavy Gen II Synth -->
+
+    <PawnKindDef ParentName="FCP_InstituteSynthGenIIBase">
+        <defName>FCP_Pawnkind_Institute_Synth_GenII_Heavy</defName>
+        <label>heavy gen 2 synth</label>
+        <combatPower>140</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Uniform</li>
+            <li>FCP_Apparel_Synth_Armor_Heavy</li>
+            <li>FCP_Apparel_Synth_Helmet_Heavy</li>
+        </apparelRequired>
+    </PawnKindDef>
+
     <!-- Courser -->
 
     <PawnKindDef ParentName="FCP_InstituteCombatSynthBase">
@@ -82,7 +184,12 @@
         <label>courser</label>
         <combatPower>170</combatPower>
         <itemQuality>Excellent</itemQuality>
-        <apparelMoney>900~1400</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>FCP_Institute_Courser_Apparel</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Courser_Uniform</li>
+        </apparelRequired>
         <weaponMoney>1400~2000</weaponMoney>
         <xenotypeSet>
             <xenotypeChances>
@@ -99,6 +206,11 @@
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
+        <startingHediffs>
+            <li>
+                <def>FCP_Hediff_SynthComponents_GenIII</def>
+            </li>
+        </startingHediffs>
     </PawnKindDef>
 
     <!-- Institute Personnel -->
@@ -117,7 +229,13 @@
         <defName>FCP_Pawnkind_Institute_RequisitionOfficer</defName>
         <label>synth requisition officer</label>
         <combatPower>40</combatPower>
-        <apparelMoney>300~600</apparelMoney>
+        <apparelMoney>0</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>FCP_Institute_Synth_Apparel</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Uniform</li>
+        </apparelRequired>
         <weaponMoney>0~0</weaponMoney>
         <trader>true</trader>
         <useFactionXenotypes>false</useFactionXenotypes>

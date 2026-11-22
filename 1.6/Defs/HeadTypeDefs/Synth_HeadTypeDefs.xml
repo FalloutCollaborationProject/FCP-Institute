@@ -27,22 +27,8 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>FCP_Male_Synth_GenII_Head_Narrow</defName>
-        <graphicPath>FCP_Synth/GenII/Heads/Male_Synth_GenII_Narrow</graphicPath>
-        <gender>Male</gender>
-        <randomChosen>false</randomChosen>
-    </HeadTypeDef>
-
-    <HeadTypeDef>
         <defName>FCP_Female_Synth_GenII_Head_Average</defName>
         <graphicPath>FCP_Synth/GenII/Heads/Female_Synth_GenII_Average</graphicPath>
-        <gender>Female</gender>
-        <randomChosen>false</randomChosen>
-    </HeadTypeDef>
-
-    <HeadTypeDef>
-        <defName>FCP_Female_Synth_GenII_Head_Narrow</defName>
-        <graphicPath>FCP_Synth/GenII/Heads/Female_Synth_GenII_Narrow</graphicPath>
         <gender>Female</gender>
         <randomChosen>false</randomChosen>
     </HeadTypeDef>

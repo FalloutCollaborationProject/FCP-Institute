@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Thing Sets __________-->
+
+    <!-- Institute Relay Delivery -->
+
+    <ThingSetMakerDef>
+        <defName>FCP_ThingSetMaker_Institute_RelayDelivery</defName>
+        <root Class="ThingSetMaker_Count">
+            <fixedParams>
+                <countRange>1~1</countRange>
+                <filter>
+                    <thingDefs>
+                        <li>FCP_Apparel_Institute_Lab_Coat</li>
+                        <li>FCP_Apparel_Institute_Jumpsuit</li>
+                        <li>FCP_Apparel_Synth_Uniform</li>
+                        <li>FCP_Apparel_Synth_Armor_Light</li>
+                        <li>FCP_Apparel_Synth_Armor_Sturdy</li>
+                        <li>FCP_Apparel_Synth_Helmet_Light</li>
+                        <li>FCP_Apparel_Synth_Helmet_Sturdy</li>
+                        <li>Techprint_FCP_Research_Institute_Attire</li>
+                        <li>Techprint_FCP_Research_Institute_Directorate_Regalia</li>
+                        <li>Techprint_FCP_Research_Institute_Synth_Field_Armor</li>
+                        <li>Techprint_FCP_Research_Institute_Courser_Uniform</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+</Defs>

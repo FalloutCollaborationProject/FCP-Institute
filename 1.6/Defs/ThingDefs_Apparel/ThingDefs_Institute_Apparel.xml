@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Apparel __________-->
+
+    <!-- Institute Apparel Base -->
+
+    <ThingDef Name="FCP_Institute_Apparel_Base" ParentName="FCP_Apparel_Makeable_Base" Abstract="True">
+        <thingCategories Inherit="False">
+            <li>FCP_Institute_Apparel</li>
+        </thingCategories>
+        <tradeTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <thingSetMakerTags Inherit="False" />
+        <recipeMaker IsNull="True" />
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <!--_____ Staff Clothing _____-->
+
+    <!-- Institute Lab Coat -->
+
+    <ThingDef ParentName="FCP_Institute_Apparel_Base">
+        <defName>FCP_Apparel_Institute_Lab_Coat</defName>
+        <label>Institute lab coat</label>
+        <description>A clean white lab coat cut from fabric grown and woven below the Commonwealth, with the Institute's Vitruvian emblem stitched over the heart. Every scientist in the facility wears one. On the surface it's about as subtle as a flare.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Institute_Lab_Coat/FCP_Institute_Lab_Coat</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>2</Mass>
+            <MarketValue>260</MarketValue>
+            <Insulation_Cold>3.0</Insulation_Cold>
+            <Insulation_Heat>2.3</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <GlobalLearningFactor>0.10</GlobalLearningFactor>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Institute_Lab_Coat/FCP_Institute_Lab_Coat</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>FCP_Institute_Apparel</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Institute Jumpsuit -->
+
+    <ThingDef ParentName="FCP_Institute_Apparel_Base">
+        <defName>FCP_Apparel_Institute_Jumpsuit</defName>
+        <label>Institute jumpsuit</label>
+        <description>A one-piece work suit issued to technicians and support staff, white across the shoulders and grey below, trimmed in orange around the collar. Pockets are placed for tools, not comfort.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Institute_Jumpsuit/FCP_Institute_Jumpsuit</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToMake>5000</WorkToMake>
+            <Mass>1.5</Mass>
+            <MarketValue>180</MarketValue>
+            <Insulation_Cold>4.0</Insulation_Cold>
+            <Insulation_Heat>2.0</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <GeneralLaborSpeed>0.05</GeneralLaborSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Institute_Jumpsuit/FCP_Institute_Jumpsuit</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>FCP_Institute_Apparel</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--_____ Directorate _____-->
+
+    <!-- Division Head Coat Base -->
+
+    <ThingDef Name="FCP_Institute_Division_Head_Coat_Base" ParentName="FCP_Institute_Apparel_Base" Abstract="True">
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>2.2</Mass>
+            <MarketValue>450</MarketValue>
+            <Insulation_Cold>4.0</Insulation_Cold>
+            <Insulation_Heat>2.3</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>FCP_Institute_Directorate_Apparel</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Advanced Systems Head Coat -->
+
+    <ThingDef ParentName="FCP_Institute_Division_Head_Coat_Base">
+        <defName>FCP_Apparel_Institute_Division_Head_Coat_Advanced_Systems</defName>
+        <label>Advanced Systems division head coat</label>
+        <description>A dark Directorate coat with a white collar panel, cut for the head of Advanced Systems. The division built the molecular relay and most of what keeps the Institute running, and its head expects a seat at every table where funding gets decided.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_Advanced_Systems/FCP_Institute_Division_Head_Coat_Advanced_Systems</texPath>
+        </graphicData>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.10</ResearchSpeed>
+            <SocialImpact>0.10</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_Advanced_Systems/FCP_Institute_Division_Head_Coat_Advanced_Systems</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- BioScience Head Coat -->
+
+    <ThingDef ParentName="FCP_Institute_Division_Head_Coat_Base">
+        <defName>FCP_Apparel_Institute_Division_Head_Coat_BioScience</defName>
+        <label>BioScience division head coat</label>
+        <description>The head of BioScience wears this to Directorate meetings and, by most accounts, straight into the greenhouses after. The division feeds the Institute from its underground fields and keeps the gorilla pens and the old FEV notes under the same roof.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_BioScience/FCP_Institute_Division_Head_Coat_BioScience</texPath>
+        </graphicData>
+        <equippedStatOffsets>
+            <PlantWorkSpeed>0.10</PlantWorkSpeed>
+            <SocialImpact>0.10</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_BioScience/FCP_Institute_Division_Head_Coat_BioScience</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Facilities Head Coat -->
+
+    <ThingDef ParentName="FCP_Institute_Division_Head_Coat_Base">
+        <defName>FCP_Apparel_Institute_Division_Head_Coat_Facilities</defName>
+        <label>Facilities division head coat</label>
+        <description>Black Directorate cut, issued to whoever runs Facilities. Power, air, water, and every wall in the place fall under Facilities, along with the Gen 1 crews that do the heavy lifting.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_Facilities/FCP_Institute_Division_Head_Coat_Facilities</texPath>
+        </graphicData>
+        <equippedStatOffsets>
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <SocialImpact>0.10</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_Facilities/FCP_Institute_Division_Head_Coat_Facilities</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- Robotics Head Coat -->
+
+    <ThingDef ParentName="FCP_Institute_Division_Head_Coat_Base">
+        <defName>FCP_Apparel_Institute_Division_Head_Coat_Robotics</defName>
+        <label>Robotics division head coat</label>
+        <description>Worn by the head of Robotics. Every synth walking the Commonwealth came off a Robotics line, and the division's head signs off on each new generation before it ever leaves the lab.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_Robotics/FCP_Institute_Division_Head_Coat_Robotics</texPath>
+        </graphicData>
+        <equippedStatOffsets>
+            <GeneralLaborSpeed>0.10</GeneralLaborSpeed>
+            <SocialImpact>0.10</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_Robotics/FCP_Institute_Division_Head_Coat_Robotics</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!-- SRB Head Coat -->
+
+    <ThingDef ParentName="FCP_Institute_Division_Head_Coat_Base">
+        <defName>FCP_Apparel_Institute_Division_Head_Coat_SRB</defName>
+        <label>Synth Retention Bureau head coat</label>
+        <description>The coat of the Synth Retention Bureau's director. The Bureau tracks every synth that slips its programming, and its head is the one who decides when a Courser goes topside to bring it back.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_SRB/FCP_Institute_Division_Head_Coat_SRB</texPath>
+        </graphicData>
+        <equippedStatOffsets>
+            <ArrestSuccessChance>0.15</ArrestSuccessChance>
+            <SocialImpact>0.10</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Institute_Division_Head_Coat_SRB/FCP_Institute_Division_Head_Coat_SRB</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!--_____ Coursers _____-->
+
+    <!-- Courser Uniform -->
+
+    <ThingDef ParentName="FCP_Institute_Apparel_Base">
+        <defName>FCP_Apparel_Institute_Courser_Uniform</defName>
+        <label>courser uniform</label>
+        <description>The long black field coat of an Institute Courser. Ballistic weave and polymer plates are sewn into the lining, so it stops rounds like light combat armor while still moving like a coat. Coursers don't wear anything over it. They rarely need to.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Courser_Uniform/FCP_Courser_Uniform</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>220</MaxHitPoints>
+            <WorkToMake>14000</WorkToMake>
+            <Mass>4</Mass>
+            <MarketValue>900</MarketValue>
+            <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Courser_Uniform/FCP_Courser_Uniform</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>FCP_Institute_Courser_Apparel</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

@@ -85,8 +85,13 @@
                     <li>EmergeFromWater</li>
                 </disallowedStrategies>
                 <options>
-                    <FCP_Pawnkind_Institute_CombatSynth>10</FCP_Pawnkind_Institute_CombatSynth>
-                    <FCP_Pawnkind_Institute_Courser>3</FCP_Pawnkind_Institute_Courser>
+                    <FCP_Pawnkind_Institute_Synth_GenI_Light>6</FCP_Pawnkind_Institute_Synth_GenI_Light>
+                    <FCP_Pawnkind_Institute_Synth_GenI_Sturdy>4</FCP_Pawnkind_Institute_Synth_GenI_Sturdy>
+                    <FCP_Pawnkind_Institute_Synth_GenI_Heavy>2</FCP_Pawnkind_Institute_Synth_GenI_Heavy>
+                    <FCP_Pawnkind_Institute_Synth_GenII_Light>4</FCP_Pawnkind_Institute_Synth_GenII_Light>
+                    <FCP_Pawnkind_Institute_Synth_GenII_Sturdy>3</FCP_Pawnkind_Institute_Synth_GenII_Sturdy>
+                    <FCP_Pawnkind_Institute_Synth_GenII_Heavy>2</FCP_Pawnkind_Institute_Synth_GenII_Heavy>
+                    <FCP_Pawnkind_Institute_Courser>1</FCP_Pawnkind_Institute_Courser>
                 </options>
             </li>
             <li>
@@ -99,7 +104,10 @@
                 <kindDef>Settlement</kindDef>
                 <options>
                     <FCP_Pawnkind_Institute_Personnel>15</FCP_Pawnkind_Institute_Personnel>
-                    <FCP_Pawnkind_Institute_CombatSynth>10</FCP_Pawnkind_Institute_CombatSynth>
+                    <FCP_Pawnkind_Institute_Synth_GenI_Light>4</FCP_Pawnkind_Institute_Synth_GenI_Light>
+                    <FCP_Pawnkind_Institute_Synth_GenI_Sturdy>2</FCP_Pawnkind_Institute_Synth_GenI_Sturdy>
+                    <FCP_Pawnkind_Institute_Synth_GenII_Sturdy>3</FCP_Pawnkind_Institute_Synth_GenII_Sturdy>
+                    <FCP_Pawnkind_Institute_Synth_GenII_Heavy>1</FCP_Pawnkind_Institute_Synth_GenII_Heavy>
                     <FCP_Pawnkind_Institute_Courser>2</FCP_Pawnkind_Institute_Courser>
                 </options>
             </li>

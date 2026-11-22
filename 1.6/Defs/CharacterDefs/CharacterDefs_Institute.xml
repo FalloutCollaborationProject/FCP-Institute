@@ -31,6 +31,9 @@
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Thin</bodyTypeDef>
             </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_DirectorsCouncil</tier>
+            </li>
         </definitions>
     </FCP.Core.CharacterDef>
 
@@ -60,6 +63,9 @@
                 <skinColorOverride>(191, 166, 140)</skinColorOverride>
                 <headTypeDef>Female_AverageNormal</headTypeDef>
                 <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_DivisionHead</tier>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>
@@ -91,6 +97,9 @@
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
             </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_SRBDirector</tier>
+            </li>
         </definitions>
     </FCP.Core.CharacterDef>
 
@@ -121,10 +130,13 @@
                 <headTypeDef>Female_AverageNormal</headTypeDef>
                 <bodyTypeDef>Female</bodyTypeDef>
             </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_SRBAgent</tier>
+            </li>
         </definitions>
     </FCP.Core.CharacterDef>
 
-    <!-- Alan Binet -->
+    <!-- Dr. Clayton Holdren -->
 
     <FCP.Core.CharacterDef>
         <defName>FCP_Character_Institute_ClaytonHoldren</defName>
@@ -138,8 +150,8 @@
         </roles>
         <definitions>
             <li Class="FCP.Core.CharacterStoryDefinition">
-                <firstName>Alan</firstName>
-                <lastName>Binet</lastName>
+                <firstName>Clayton</firstName>
+                <lastName>Holdren</lastName>
                 <gender>Male</gender>
                 <age>55</age>
             </li>
@@ -151,10 +163,13 @@
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
             </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_DivisionHead</tier>
+            </li>
         </definitions>
     </FCP.Core.CharacterDef>
 
-    <!-- Dr. Clayton Holdren -->
+    <!-- Alan Binet -->
 
     <FCP.Core.CharacterDef>
         <defName>FCP_Character_Institute_AlanBinet</defName>
@@ -168,8 +183,8 @@
         </roles>
         <definitions>
             <li Class="FCP.Core.CharacterStoryDefinition">
-                <firstName>Clayton</firstName>
-                <lastName>Holdren</lastName>
+                <firstName>Alan</firstName>
+                <lastName>Binet</lastName>
                 <gender>Male</gender>
                 <age>50</age>
             </li>
@@ -180,6 +195,9 @@
                 <skinColorOverride>(191, 166, 140)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_DivisionHead</tier>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>
@@ -208,6 +226,577 @@
             </li>
             <li Class="FCP.Core.CharacterRankDefinition">
                 <tier>FCP_Rank_Institute_FieldCourser</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Allie Filmore -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_AllieFilmore</defName>
+        <pawnKind>FCP_Unique_Pawnkind_AllieFilmore</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>600</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Allie</firstName>
+                <lastName>Filmore</lastName>
+                <gender>Female</gender>
+                <age>54</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 145, 140)</hairColor>
+                <hairDef>FCP_Hair_No_Nonsense</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_DivisionHead</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Newton Oberly -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_NewtonOberly</defName>
+        <pawnKind>FCP_Unique_Pawnkind_NewtonOberly</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Newton</firstName>
+                <lastName>Oberly</lastName>
+                <gender>Male</gender>
+                <age>62</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(210, 205, 200)</hairColor>
+                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(230, 205, 190)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_SeniorResearcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Evan Watson -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_EvanWatson</defName>
+        <pawnKind>FCP_Unique_Pawnkind_EvanWatson</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Evan</firstName>
+                <lastName>Watson</lastName>
+                <gender>Male</gender>
+                <age>44</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 50, 35)</hairColor>
+                <hairDef>FCP_Hair_Clean_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_Researcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Lawrence Higgs -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_LawrenceHiggs</defName>
+        <pawnKind>FCP_Unique_Pawnkind_LawrenceHiggs</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Lawrence</firstName>
+                <lastName>Higgs</lastName>
+                <gender>Male</gender>
+                <age>41</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 30, 25)</hairColor>
+                <hairDef>FCP_Hair_Smooth_Suave</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_Researcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Max Loken -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_MaxLoken</defName>
+        <pawnKind>FCP_Unique_Pawnkind_MaxLoken</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Max</firstName>
+                <lastName>Loken</lastName>
+                <gender>Male</gender>
+                <age>46</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 80, 50)</hairColor>
+                <hairDef>FCP_Hair_Bedraggled</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_Researcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Dean Volkert -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_DeanVolkert</defName>
+        <pawnKind>FCP_Unique_Pawnkind_DeanVolkert</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>450</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Dean</firstName>
+                <lastName>Volkert</lastName>
+                <gender>Male</gender>
+                <age>63</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(190, 190, 190)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_SeniorResearcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Brendan Volkert -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_BrendanVolkert</defName>
+        <pawnKind>FCP_Unique_Pawnkind_BrendanVolkert</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Brendan</firstName>
+                <lastName>Volkert</lastName>
+                <gender>Male</gender>
+                <age>29</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(100, 75, 50)</hairColor>
+                <hairDef>FCP_Hair_Clean_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_Researcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Isaac Karlin -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_IsaacKarlin</defName>
+        <pawnKind>FCP_Unique_Pawnkind_IsaacKarlin</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Isaac</firstName>
+                <lastName>Karlin</lastName>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 55, 50)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Saw</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(166, 133, 102)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_SeniorResearcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Rosalind Orman -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_RosalindOrman</defName>
+        <pawnKind>FCP_Unique_Pawnkind_RosalindOrman</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Rosalind</firstName>
+                <lastName>Orman</lastName>
+                <gender>Female</gender>
+                <age>47</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 60, 40)</hairColor>
+                <hairDef>FCP_Hair_The_Sophisticate</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_SeniorResearcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Janet Thompson -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_JanetThompson</defName>
+        <pawnKind>FCP_Unique_Pawnkind_JanetThompson</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Janet</firstName>
+                <lastName>Thompson</lastName>
+                <gender>Female</gender>
+                <age>40</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(130, 90, 50)</hairColor>
+                <hairDef>FCP_Hair_Domestic_Goddess</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_Researcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Enrico Thompson -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_EnricoThompson</defName>
+        <pawnKind>FCP_Unique_Pawnkind_EnricoThompson</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Enrico</firstName>
+                <lastName>Thompson</lastName>
+                <gender>Male</gender>
+                <age>43</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(25, 20, 18)</hairColor>
+                <hairDef>FCP_Hair_Pompadour</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(166, 133, 102)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_Researcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Nathan Filmore -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_NathanFilmore</defName>
+        <pawnKind>FCP_Unique_Pawnkind_NathanFilmore</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Nathan</firstName>
+                <lastName>Filmore</lastName>
+                <gender>Male</gender>
+                <age>31</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(55, 40, 30)</hairColor>
+                <hairDef>FCP_Hair_Blast_Back</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_Researcher</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Liam Binet -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_LiamBinet</defName>
+        <pawnKind>FCP_Unique_Pawnkind_LiamBinet</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Liam</firstName>
+                <lastName>Binet</lastName>
+                <gender>Male</gender>
+                <age>17</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 80, 60)</hairColor>
+                <hairDef>FCP_Hair_Vault_Boy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Institute_AlanBinet</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Quentin Filmore -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_QuentinFilmore</defName>
+        <pawnKind>FCP_Unique_Pawnkind_QuentinFilmore</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Quentin</firstName>
+                <lastName>Filmore</lastName>
+                <gender>Male</gender>
+                <age>10</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 45, 30)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Child</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Alice Thompson -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_AliceThompson</defName>
+        <pawnKind>FCP_Unique_Pawnkind_AliceThompson</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Alice</firstName>
+                <lastName>Thompson</lastName>
+                <gender>Female</gender>
+                <age>9</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(180, 140, 80)</hairColor>
+                <hairDef>FCP_Hair_Fairy_Tails</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Child</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Kellogg -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_Kellogg</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Kellogg</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Conrad</firstName>
+                <lastName>Kellogg</lastName>
+                <nickname>Kellogg</nickname>
+                <gender>Male</gender>
+                <age>56</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 35, 30)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Cut</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Z2-47 -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_Z2_47</defName>
+        <pawnKind>FCP_Pawnkind_Institute_Courser</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Z2-47</firstName>
+                <lastName />
+                <gender>Male</gender>
+                <age>35</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Clean_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_FieldCourser</tier>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Shaun -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_SynthShaun</defName>
+        <pawnKind>FCP_Unique_Pawnkind_SynthShaun</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Shaun</firstName>
+                <lastName />
+                <gender>Male</gender>
+                <age>10</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 50, 35)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Child</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition">
+                <hediffDef>FCP_Hediff_SynthComponents_GenIII</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Mayor McDonough -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_McDonough</defName>
+        <pawnKind>FCP_Unique_Pawnkind_McDonough</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>McDonough</firstName>
+                <lastName />
+                <nickname>Mayor McDonough</nickname>
+                <gender>Male</gender>
+                <age>46</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(45, 35, 30)</hairColor>
+                <hairDef>FCP_Hair_Smooth_Suave</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(204, 179, 166)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition">
+                <hediffDef>FCP_Hediff_SynthComponents_GenIII</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Doctor Zimmer -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Institute_Zimmer</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Zimmer</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Doctor</firstName>
+                <lastName>Zimmer</lastName>
+                <gender>Male</gender>
+                <age>66</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(200, 200, 200)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(217, 191, 179)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Institute_SeniorResearcher</tier>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>

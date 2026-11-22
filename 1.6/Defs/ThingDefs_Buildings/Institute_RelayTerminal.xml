@@ -201,7 +201,7 @@
         <factionDef>FCP_Faction_Institute</factionDef>
         <pawnKinds>
             <FCP_Pawnkind_Institute_Personnel>1</FCP_Pawnkind_Institute_Personnel>
-            <FCP_Pawnkind_Institute_CombatSynth>2</FCP_Pawnkind_Institute_CombatSynth>
+            <FCP_Pawnkind_Institute_Synth_GenII_Sturdy>2</FCP_Pawnkind_Institute_Synth_GenII_Sturdy>
             <FCP_Pawnkind_Institute_RequisitionOfficer>1</FCP_Pawnkind_Institute_RequisitionOfficer>
         </pawnKinds>
         <things>
@@ -368,7 +368,9 @@
         <factionDef>FCP_Faction_Institute</factionDef>
         <pawnKinds>
             <FCP_Pawnkind_Institute_Personnel>4</FCP_Pawnkind_Institute_Personnel>
-            <FCP_Pawnkind_Institute_CombatSynth>3</FCP_Pawnkind_Institute_CombatSynth>
+            <FCP_Pawnkind_Institute_Synth_GenI_Light>1</FCP_Pawnkind_Institute_Synth_GenI_Light>
+            <FCP_Pawnkind_Institute_Synth_GenII_Sturdy>1</FCP_Pawnkind_Institute_Synth_GenII_Sturdy>
+            <FCP_Pawnkind_Institute_Synth_GenII_Heavy>1</FCP_Pawnkind_Institute_Synth_GenII_Heavy>
             <FCP_Pawnkind_Institute_Courser>1</FCP_Pawnkind_Institute_Courser>
         </pawnKinds>
         <things>

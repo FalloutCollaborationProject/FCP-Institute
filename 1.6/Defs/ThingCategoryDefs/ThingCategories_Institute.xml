@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Categories __________-->
+
+    <!-- Institute Apparel -->
+
+    <ThingCategoryDef>
+        <defName>FCP_Institute_Apparel</defName>
+        <label>Institute apparel</label>
+        <parent>Apparel</parent>
+    </ThingCategoryDef>
+
+</Defs>

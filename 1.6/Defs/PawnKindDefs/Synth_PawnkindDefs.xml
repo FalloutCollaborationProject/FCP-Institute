@@ -51,6 +51,12 @@
         <combatPower>45</combatPower>
         <itemQuality>Normal</itemQuality>
         <gearHealthRange>1~1.8</gearHealthRange>
+        <apparelTags>
+            <li>FCP_Institute_Synth_Apparel</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Uniform</li>
+        </apparelRequired>
         <xenotypeSet>
             <xenotypeChances>
                 <FCP_Xenotype_Synth_GenII>1</FCP_Xenotype_Synth_GenII>
@@ -83,6 +89,11 @@
             </xenotypeChances>
         </xenotypeSet>
         <useFactionXenotypes>false</useFactionXenotypes>
+        <startingHediffs>
+            <li>
+                <def>FCP_Hediff_SynthComponents_GenIII</def>
+            </li>
+        </startingHediffs>
     </PawnKindDef>
 
 </Defs>

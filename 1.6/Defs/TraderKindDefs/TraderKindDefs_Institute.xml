@@ -53,6 +53,94 @@
                 <thingDef>FCP_Gun_Plasma_Rifle</thingDef>
                 <countRange>1~2</countRange>
             </li>
+
+            <!--__ Staff Clothing __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Lab_Coat</thingDef>
+                <countRange>1~2</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Jumpsuit</thingDef>
+                <countRange>1~2</countRange>
+            </li>
+
+            <!--__ Directorate __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Division_Head_Coat_Advanced_Systems</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Division_Head_Coat_BioScience</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Division_Head_Coat_Facilities</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Division_Head_Coat_Robotics</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Division_Head_Coat_SRB</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+
+            <!--__ Synth Apparel __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Synth_Uniform</thingDef>
+                <countRange>1~3</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Synth_Armor_Light</thingDef>
+                <countRange>0~2</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Synth_Armor_Sturdy</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Synth_Armor_Heavy</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Synth_Helmet_Light</thingDef>
+                <countRange>0~2</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Synth_Helmet_Sturdy</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Synth_Helmet_Heavy</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Institute_Courser_Uniform</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+
+            <!--__ Holotapes __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Techprint_FCP_Research_Institute_Attire</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Techprint_FCP_Research_Institute_Directorate_Regalia</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Techprint_FCP_Research_Institute_Synth_Field_Armor</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Techprint_FCP_Research_Institute_Courser_Uniform</thingDef>
+                <countRange>0~1</countRange>
+            </li>
         </stockGenerators>
     </TraderKindDef>
 

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Institute Apparel Recipes __________-->
+
+    <!-- Institute Tailoring Recipe Base -->
+
+    <RecipeDef Name="FCP_Institute_Tailoring_Recipe_Base" Abstract="True">
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        <recipeUsers>
+            <li>FCP_Production_Tailoring_Workbench</li>
+        </recipeUsers>
+        <modExtensions>
+            <li Class="FCP.Factions.RecipeExtension_FactionGoodwillCheck">
+                <requireFaction>FCP_Faction_Institute</requireFaction>
+                <minimumGoodwill>70</minimumGoodwill>
+                <uncraftableIfFactionDefeated>true</uncraftableIfFactionDefeated>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!-- Institute Armor Recipe Base -->
+
+    <RecipeDef Name="FCP_Institute_Armor_Recipe_Base" Abstract="True">
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <recipeUsers>
+            <li>FCP_Production_Armor_Workbench</li>
+        </recipeUsers>
+        <modExtensions>
+            <li Class="FCP.Factions.RecipeExtension_FactionGoodwillCheck">
+                <requireFaction>FCP_Faction_Institute</requireFaction>
+                <minimumGoodwill>70</minimumGoodwill>
+                <uncraftableIfFactionDefeated>true</uncraftableIfFactionDefeated>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!--_____ Staff Clothing _____-->
+
+    <!-- Institute Lab Coat -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Lab_Coat</defName>
+        <label>make Institute lab coat</label>
+        <description>Sew an Institute lab coat from patterns supplied by the Institute. Requires strong relations with the Institute.</description>
+        <jobString>Making Institute lab coat.</jobString>
+        <workAmount>6000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Lab_Coat>1</FCP_Apparel_Institute_Lab_Coat>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Attire</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Institute Jumpsuit -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Jumpsuit</defName>
+        <label>make Institute jumpsuit</label>
+        <description>Sew an Institute work jumpsuit from patterns supplied by the Institute. Requires strong relations with the Institute.</description>
+        <jobString>Making Institute jumpsuit.</jobString>
+        <workAmount>5000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Jumpsuit>1</FCP_Apparel_Institute_Jumpsuit>
+        </products>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Attire</researchPrerequisite>
+    </RecipeDef>
+
+    <!--_____ Directorate _____-->
+
+    <!-- Advanced Systems Head Coat -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Division_Head_Coat_Advanced_Systems</defName>
+        <label>make Advanced Systems division head coat</label>
+        <description>Sew the coat worn by the head of Advanced Systems. Requires strong relations with the Institute.</description>
+        <jobString>Making division head coat.</jobString>
+        <workAmount>8000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Division_Head_Coat_Advanced_Systems>1</FCP_Apparel_Institute_Division_Head_Coat_Advanced_Systems>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Directorate_Regalia</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- BioScience Head Coat -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Division_Head_Coat_BioScience</defName>
+        <label>make BioScience division head coat</label>
+        <description>Sew the coat worn by the head of BioScience. Requires strong relations with the Institute.</description>
+        <jobString>Making division head coat.</jobString>
+        <workAmount>8000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Division_Head_Coat_BioScience>1</FCP_Apparel_Institute_Division_Head_Coat_BioScience>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Directorate_Regalia</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Facilities Head Coat -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Division_Head_Coat_Facilities</defName>
+        <label>make Facilities division head coat</label>
+        <description>Sew the coat worn by the head of Facilities. Requires strong relations with the Institute.</description>
+        <jobString>Making division head coat.</jobString>
+        <workAmount>8000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Division_Head_Coat_Facilities>1</FCP_Apparel_Institute_Division_Head_Coat_Facilities>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Directorate_Regalia</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Robotics Head Coat -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Division_Head_Coat_Robotics</defName>
+        <label>make Robotics division head coat</label>
+        <description>Sew the coat worn by the head of Robotics. Requires strong relations with the Institute.</description>
+        <jobString>Making division head coat.</jobString>
+        <workAmount>8000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Division_Head_Coat_Robotics>1</FCP_Apparel_Institute_Division_Head_Coat_Robotics>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Directorate_Regalia</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- SRB Head Coat -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Division_Head_Coat_SRB</defName>
+        <label>make Synth Retention Bureau head coat</label>
+        <description>Sew the coat worn by the director of the Synth Retention Bureau. Requires strong relations with the Institute.</description>
+        <jobString>Making division head coat.</jobString>
+        <workAmount>8000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Division_Head_Coat_SRB>1</FCP_Apparel_Institute_Division_Head_Coat_SRB>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Directorate_Regalia</researchPrerequisite>
+    </RecipeDef>
+
+    <!--_____ Synth Apparel _____-->
+
+    <!-- Synth Uniform -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Synth_Uniform</defName>
+        <label>make synth uniform</label>
+        <description>Sew a synth uniform. Requires strong relations with the Institute.</description>
+        <jobString>Making synth uniform.</jobString>
+        <workAmount>5000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Synthread</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Synth_Uniform>1</FCP_Apparel_Synth_Uniform>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Synth_Field_Armor</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Light Synth Armor -->
+
+    <RecipeDef ParentName="FCP_Institute_Armor_Recipe_Base">
+        <defName>FCP_Recipe_Make_Synth_Armor_Light</defName>
+        <label>make light synth armor</label>
+        <description>Mold and fit a set of light synth armor. Requires strong relations with the Institute.</description>
+        <jobString>Making light synth armor.</jobString>
+        <workAmount>9000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Synth_Armor_Light>1</FCP_Apparel_Synth_Armor_Light>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Synth_Field_Armor</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Sturdy Synth Armor -->
+
+    <RecipeDef ParentName="FCP_Institute_Armor_Recipe_Base">
+        <defName>FCP_Recipe_Make_Synth_Armor_Sturdy</defName>
+        <label>make sturdy synth armor</label>
+        <description>Mold and fit a set of sturdy synth armor. Requires strong relations with the Institute.</description>
+        <jobString>Making sturdy synth armor.</jobString>
+        <workAmount>10500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Synth_Armor_Sturdy>1</FCP_Apparel_Synth_Armor_Sturdy>
+        </products>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Synth_Field_Armor</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Heavy Synth Armor -->
+
+    <RecipeDef ParentName="FCP_Institute_Armor_Recipe_Base">
+        <defName>FCP_Recipe_Make_Synth_Armor_Heavy</defName>
+        <label>make heavy synth armor</label>
+        <description>Mold and fit a set of heavy synth armor. Requires strong relations with the Institute.</description>
+        <jobString>Making heavy synth armor.</jobString>
+        <workAmount>12000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>80</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Synth_Armor_Heavy>1</FCP_Apparel_Synth_Armor_Heavy>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Synth_Field_Armor</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Light Synth Helmet -->
+
+    <RecipeDef ParentName="FCP_Institute_Armor_Recipe_Base">
+        <defName>FCP_Recipe_Make_Synth_Helmet_Light</defName>
+        <label>make light synth helmet</label>
+        <description>Mold a light synth helmet. Requires strong relations with the Institute.</description>
+        <jobString>Making light synth helmet.</jobString>
+        <workAmount>3000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Synth_Helmet_Light>1</FCP_Apparel_Synth_Helmet_Light>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Synth_Field_Armor</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Sturdy Synth Helmet -->
+
+    <RecipeDef ParentName="FCP_Institute_Armor_Recipe_Base">
+        <defName>FCP_Recipe_Make_Synth_Helmet_Sturdy</defName>
+        <label>make sturdy synth helmet</label>
+        <description>Mold a sturdy synth helmet. Requires strong relations with the Institute.</description>
+        <jobString>Making sturdy synth helmet.</jobString>
+        <workAmount>3500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Synth_Helmet_Sturdy>1</FCP_Apparel_Synth_Helmet_Sturdy>
+        </products>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Synth_Field_Armor</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Heavy Synth Helmet -->
+
+    <RecipeDef ParentName="FCP_Institute_Armor_Recipe_Base">
+        <defName>FCP_Recipe_Make_Synth_Helmet_Heavy</defName>
+        <label>make heavy synth helmet</label>
+        <description>Mold a heavy synth helmet. Requires strong relations with the Institute.</description>
+        <jobString>Making heavy synth helmet.</jobString>
+        <workAmount>4000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Synth_Helmet_Heavy>1</FCP_Apparel_Synth_Helmet_Heavy>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Synth_Field_Armor</researchPrerequisite>
+    </RecipeDef>
+
+    <!--_____ Coursers _____-->
+
+    <!-- Courser Uniform -->
+
+    <RecipeDef ParentName="FCP_Institute_Tailoring_Recipe_Base">
+        <defName>FCP_Recipe_Make_Institute_Courser_Uniform</defName>
+        <label>make courser uniform</label>
+        <description>Sew a courser uniform, with ballistic weave and polymer plates stitched into the lining. Requires strong relations with the Institute.</description>
+        <jobString>Making courser uniform.</jobString>
+        <workAmount>14000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Synthread</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <FCP_Apparel_Institute_Courser_Uniform>1</FCP_Apparel_Institute_Courser_Uniform>
+        </products>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>FCP_Research_Institute_Courser_Uniform</researchPrerequisite>
+    </RecipeDef>
+
+</Defs>

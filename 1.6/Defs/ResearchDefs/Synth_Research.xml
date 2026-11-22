@@ -14,6 +14,8 @@
         <prerequisites>
             <li>MicroelectronicsBasics</li>
         </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
         <tab>FCP_Faction_Research</tab>
     </ResearchProjectDef>
 
@@ -30,6 +32,8 @@
             <li>GrowthVats</li>
         </prerequisites>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
         <tab>FCP_Faction_Research</tab>
     </ResearchProjectDef>
 
@@ -49,6 +53,8 @@
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
         <tab>FCP_Faction_Research</tab>
     </ResearchProjectDef>
 
@@ -67,6 +73,8 @@
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
         <tab>FCP_Faction_Research</tab>
     </ResearchProjectDef>
 
@@ -85,6 +93,8 @@
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
         <tab>FCP_Faction_Research</tab>
     </ResearchProjectDef>
 

@@ -222,4 +222,385 @@
         </skillGains>
     </BackstoryDef>
 
+    <!-- Allie Filmore -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_AllieFilmore_Adult</defName>
+        <title>Head of Facilities</title>
+        <titleShort>Facilities</titleShort>
+        <baseDesc>[PAWN_nameDef] keeps the reactor fed, the air clean and the lights on for everyone else's research, and [PAWN_pronoun] makes sure the Directorate never forgets it. [PAWN_possessive] patience for the surface was never high. Division heads who treat Facilities as a janitorial service get even less of it.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_AllieFilmore_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>7</Construction>
+            <Crafting>5</Crafting>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Newton Oberly -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_NewtonOberly_Adult</defName>
+        <title>Facilities Administrator</title>
+        <titleShort>Administrator</titleShort>
+        <baseDesc>Food and housing in the Institute both pass across [PAWN_nameDef]'s desk. When two divisions are at each other's throats, people go to [PAWN_objective], mostly because [PAWN_pronoun] is the only senior staffer who still wants everyone to get along.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_NewtonOberly_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>4</Intellectual>
+            <Plants>3</Plants>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Evan Watson -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_EvanWatson_Adult</defName>
+        <title>Power Distribution Engineer</title>
+        <titleShort>Engineer</titleShort>
+        <baseDesc>[PAWN_nameDef] decides how the reactor's output gets split between the divisions. Every shortage turns into an argument, so [PAWN_pronoun] keeps [PAWN_possessive] logs in perfect order before anyone comes asking.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_EvanWatson_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>6</Construction>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Lawrence Higgs -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_LawrenceHiggs_Adult</defName>
+        <title>Advanced Systems Researcher</title>
+        <titleShort>Researcher</titleShort>
+        <baseDesc>Talented, and fully aware of it. [PAWN_nameDef]'s long feud with Max Loken over credit and lab space once ended with the two of them barricaded in BioScience with weapons drawn.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_LawrenceHiggs_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>7</Intellectual>
+            <Shooting>2</Shooting>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Max Loken -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_MaxLoken_Adult</defName>
+        <title>Robotics Researcher</title>
+        <titleShort>Researcher</titleShort>
+        <baseDesc>[PAWN_nameDef] works on synth motor control down on the Robotics floor. [PAWN_pronoun] is quick to anger and slow to forgive, and every division knows about the grudge [PAWN_pronoun] holds against Lawrence Higgs.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_MaxLoken_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Intellectual>6</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Dean Volkert -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_DeanVolkert_Adult</defName>
+        <title>Senior Advanced Systems Scientist</title>
+        <titleShort>Senior Scientist</titleShort>
+        <baseDesc>Decades in Advanced Systems have made [PAWN_nameDef] the name the Directorate would reach for if Madison Li ever left. [PAWN_pronoun] is careful and dry, with no taste for politics.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_DeanVolkert_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Brendan Volkert -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_BrendanVolkert_Adult</defName>
+        <title>BioScience Researcher</title>
+        <titleShort>Researcher</titleShort>
+        <baseDesc>One of the younger faces in BioScience. [PAWN_nameDef] is earnest, a little green, and puts in longer hours than anyone asks of [PAWN_objective].</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_BrendanVolkert_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Plants>3</Plants>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Isaac Karlin -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_IsaacKarlin_Adult</defName>
+        <title>BioScience Geneticist</title>
+        <titleShort>Geneticist</titleShort>
+        <baseDesc>[PAWN_nameDef] runs the gene work behind BioScience's crop and animal programs. Ask about [PAWN_possessive] results and [PAWN_pronoun]'ll talk for an hour. Ask about the test subjects and the conversation is suddenly over.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_IsaacKarlin_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Medicine>4</Medicine>
+            <Animals>3</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Rosalind Orman -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_RosalindOrman_Adult</defName>
+        <title>Advanced Systems Physicist</title>
+        <titleShort>Physicist</titleShort>
+        <baseDesc>[PAWN_nameDef] helped work out the math behind the molecular relay. Exacting and private, [PAWN_pronoun] has a habit of answering questions with better ones.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_RosalindOrman_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Janet Thompson -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_JanetThompson_Adult</defName>
+        <title>Advanced Systems Technician</title>
+        <titleShort>Technician</titleShort>
+        <baseDesc>Somebody has to keep Advanced Systems' test rigs calibrated, and for years that somebody has been [PAWN_nameDef]. It's thankless work, and the division would grind to a halt without it.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_JanetThompson_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Enrico Thompson -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_EnricoThompson_Adult</defName>
+        <title>Robotics Technician</title>
+        <titleShort>Technician</titleShort>
+        <baseDesc>[PAWN_nameDef] builds and repairs synth components on the Robotics line. [PAWN_pronoun] knows a Gen 2 frame well enough to strip one down in the dark.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_EnricoThompson_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>7</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Nathan Filmore -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_NathanFilmore_Adult</defName>
+        <title>Advanced Systems Assistant</title>
+        <titleShort>Assistant</titleShort>
+        <baseDesc>A junior hand in Advanced Systems, [PAWN_nameDef] is still trying to prove [PAWN_objective]self to a division that judges people by their published work.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_NathanFilmore_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Liam Binet -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_LiamBinet_Child</defName>
+        <title>Restless Son</title>
+        <titleShort>Son</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up on the Robotics floor watching [PAWN_possessive] father build synths. At some point [PAWN_pronoun] started seeing them as people, and started quietly helping a few of them escape under the name Patriot.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_LiamBinet_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>3</Crafting>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Quentin Filmore -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_QuentinFilmore_Child</defName>
+        <title>Corridor Kid</title>
+        <titleShort>Kid</titleShort>
+        <baseDesc>[PAWN_nameDef] has never seen the sky and doesn't much care. The Institute's corridors are the whole world to [PAWN_objective], and [PAWN_pronoun] knows every one of them.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_QuentinFilmore_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Alice Thompson -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_AliceThompson_Child</defName>
+        <title>Classroom Prodigy</title>
+        <titleShort>Prodigy</titleShort>
+        <baseDesc>[PAWN_nameDef] is already working through lessons meant for kids twice [PAWN_possessive] age. [PAWN_possessive] teachers have started arguing over which division gets [PAWN_objective].</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_AliceThompson_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Kellogg -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Kellogg_Child</defName>
+        <title>Diamond City Orphan</title>
+        <titleShort>Orphan</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up in Diamond City and lost [PAWN_possessive] parents young. The streets taught [PAWN_objective] that a gun settles most arguments, and nothing since has changed [PAWN_possessive] mind.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Kellogg_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Kellogg_Adult</defName>
+        <title>Institute Contractor</title>
+        <titleShort>Contractor</titleShort>
+        <baseDesc>The Institute keeps [PAWN_nameDef] on retainer for the jobs it won't send its own people to do. They paid for the cybernetics that have kept [PAWN_objective] alive far past a normal lifespan, and [PAWN_pronoun] pays them back in work and silence.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Kellogg_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Melee>4</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <!-- Synth Shaun -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_SynthShaun_Child</defName>
+        <title>Prototype Child</title>
+        <titleShort>Prototype</titleShort>
+        <baseDesc>[PAWN_nameDef] was built to look like a ten-year-old boy and to stay that way. Father calls the project a test of how well a synth can pass as a child. The boy has started asking why nobody will tell him where his parents went.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_SynthShaun_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Mayor McDonough -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_McDonough_Adult</defName>
+        <title>Mayor of Diamond City</title>
+        <titleShort>Mayor</titleShort>
+        <baseDesc>[PAWN_nameDef] won the mayor's office with handshakes and a ready smile. Few voters know the real McDonough was replaced years ago, or that the synth in [PAWN_possessive] place takes orders from the Institute.</baseDesc>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_McDonough_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>8</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <!-- Doctor Zimmer -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Zimmer_Adult</defName>
+        <title>Robotics Field Agent</title>
+        <titleShort>Field Agent</titleShort>
+        <baseDesc>[PAWN_nameDef] spent years hunting one runaway unit across the Capital Wasteland, sure the A3-21 prototype was too valuable to write off. To [PAWN_objective], anyone who helps a synth escape is a thief and nothing more.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Zimmer_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>7</Intellectual>
+            <Crafting>4</Crafting>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
 </Defs>

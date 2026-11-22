@@ -20,10 +20,10 @@
                 <headTypeDef>FCP_Male_Synth_GenII_Head_DiMA</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
                 <hairDef>Bald</hairDef>
-                <skinColorOverride>(160, 160, 165)</skinColorOverride>
+                <skinColorOverride>(255, 255, 255)</skinColorOverride>
             </li>
             <li Class="FCP.Core.CharacterHediffDefinition">
-                <hediffDef>FCP_Hediff_Synth_GenII_Remains</hediffDef>
+                <hediffDef>FCP_Hediff_Synth_DiMA_Frame</hediffDef>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>
@@ -51,6 +51,79 @@
             </li>
             <li Class="FCP.Core.CharacterHediffDefinition">
                 <hediffDef>FCP_Hediff_Synth_GenII_Remains</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Z1-14 -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Synth_Z1_14</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Z1_14</pawnKind>
+        <xenotype>FCP_Xenotype_Synth_GenII</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Z1-14</firstName>
+                <lastName />
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <headTypeDef>FCP_Male_Synth_GenII_Head_Average</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+                <hairDef>Bald</hairDef>
+                <skinColorOverride>(170, 165, 160)</skinColorOverride>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Gabriel -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Synth_Gabriel</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Gabriel</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Gabriel</firstName>
+                <lastName />
+                <gender>Male</gender>
+                <age>35</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Rude_Ridge</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="FCP.Core.CharacterHediffDefinition">
+                <hediffDef>FCP_Hediff_SynthComponents_GenIII</hediffDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Armitage -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Synth_Armitage</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Armitage</pawnKind>
+        <xenotype>FCP_Xenotype_Synth_GenII</xenotype>
+        <faction>FCP_Faction_Institute</faction>
+        <definitions>
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Armitage</firstName>
+                <lastName />
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <headTypeDef>FCP_Male_Synth_GenII_Head_Average</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+                <hairDef>Bald</hairDef>
+                <skinColorOverride>(222, 205, 195)</skinColorOverride>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>

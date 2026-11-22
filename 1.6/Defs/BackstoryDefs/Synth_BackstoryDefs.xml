@@ -247,4 +247,75 @@
         <possessions />
     </BackstoryDef>
 
+    <!-- Z1-14 -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Synth_Z1_14_Adult</defName>
+        <identifier>FCP_Backstory_Synth_Z1_14_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>Inside Contact</title>
+        <titleShort>Contact</titleShort>
+        <description>[PAWN_nameDef] cleans and hauls like any other Gen 2 unit. When nobody is watching, [PAWN_pronoun] passes word to the Railroad and helps other synths plan their way out.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Synth_Z1_14</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Gabriel -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Synth_Gabriel_Adult</defName>
+        <identifier>FCP_Backstory_Synth_Gabriel_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>Rogue Raider Boss</title>
+        <titleShort>Boss</titleShort>
+        <description>[PAWN_nameDef] walked out of the Institute and kept walking. [PAWN_pronoun] runs a raider gang out of a rusted ship town on the coast now, and the crew has no idea their boss is a synth.</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Social>5</Social>
+            <Melee>3</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Synth_Gabriel</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Armitage -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Synth_Armitage_Adult</defName>
+        <identifier>FCP_Backstory_Synth_Armitage_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>Bodyguard Unit</title>
+        <titleShort>Bodyguard</titleShort>
+        <description>[PAWN_nameDef] goes everywhere Doctor Zimmer goes and does most of the talking. Built for security, [PAWN_pronoun] negotiates with the same flat courtesy [PAWN_pronoun] shows right before drawing a weapon.</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Social>3</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Synth_Armitage</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
 </Defs>

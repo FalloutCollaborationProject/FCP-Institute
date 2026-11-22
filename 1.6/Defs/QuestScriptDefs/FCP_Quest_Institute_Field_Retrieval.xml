@@ -65,6 +65,10 @@
                     <def>Util_AdjustPointsForDistantFight</def>
                 </li>
                 <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GenerateThingSet">
+                    <thingSetMaker>FCP_ThingSetMaker_Institute_RelayDelivery</thingSetMaker>
+                    <storeAs>relayDelivery</storeAs>
+                </li>
                 <li Class="QuestNode_GetSiteTile">
                     <storeAs>siteTile</storeAs>
                     <preferCloserTiles>true</preferCloserTiles>
@@ -127,6 +131,12 @@
                                     <useColonistsOnMap>$site</useColonistsOnMap>
                                     <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
                                 </nodeIfChosenPawnSignalUsed>
+                            </li>
+                            <li Class="QuestNode_DropPods">
+                                <contents>$relayDelivery</contents>
+                                <useTradeDropSpot>true</useTradeDropSpot>
+                                <customLetterLabel>Institute supply drop</customLetterLabel>
+                                <customLetterText>[asker_faction_name] has sent something extra from its own stores. There's no note attached.</customLetterText>
                             </li>
                         </nodes>
                     </node>

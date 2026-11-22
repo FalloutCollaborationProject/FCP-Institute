@@ -55,4 +55,102 @@
         </backstoryFiltersOverride>
     </PawnKindDef>
 
+    <!-- Z1-14 -->
+
+    <PawnKindDef ParentName="FCP_SynthkindBase">
+        <defName>FCP_Unique_Pawnkind_Z1_14</defName>
+        <label>Z1-14</label>
+        <combatPower>45</combatPower>
+        <apparelTags>
+            <li>FCP_Institute_Synth_Apparel</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Uniform</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FCP_Xenotype_Synth_GenII>1</FCP_Xenotype_Synth_GenII>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_Z1_14</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Gabriel -->
+
+    <PawnKindDef ParentName="FCP_SynthkindBase">
+        <defName>FCP_Unique_Pawnkind_Gabriel</defName>
+        <label>Gabriel</label>
+        <combatPower>130</combatPower>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialMilitaryBasic</li>
+        </apparelTags>
+        <weaponMoney>800~1200</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner>1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_Gabriel</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Armitage -->
+
+    <PawnKindDef ParentName="FCP_SynthkindBase">
+        <defName>FCP_Unique_Pawnkind_Armitage</defName>
+        <label>Armitage</label>
+        <combatPower>90</combatPower>
+        <apparelTags>
+            <li>FCP_Institute_Synth_Apparel</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>FCP_Apparel_Synth_Uniform</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Laser_Weapon</li>
+        </weaponTags>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FCP_Xenotype_Synth_GenII>1</FCP_Xenotype_Synth_GenII>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Synth_Armitage</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
 </Defs>

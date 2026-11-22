@@ -13,6 +13,9 @@
         <maxGenerationAge>60</maxGenerationAge>
         <minGenerationAge>60</minGenerationAge>
         <apparelMoney>900~1300</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
         <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
@@ -35,6 +38,9 @@
         <maxGenerationAge>52</maxGenerationAge>
         <minGenerationAge>52</minGenerationAge>
         <apparelMoney>700~1000</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Division_Head_Coat_Advanced_Systems</li>
+        </apparelRequired>
         <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
@@ -60,6 +66,9 @@
             <li>Violent</li>
         </requiredWorkTags>
         <apparelMoney>800~1100</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Division_Head_Coat_SRB</li>
+        </apparelRequired>
         <weaponMoney>1000~1400</weaponMoney>
         <backstoryFiltersOverride>
             <li>
@@ -98,15 +107,18 @@
         </backstoryFiltersOverride>
     </PawnKindDef>
 
-    <!-- Alan Binet -->
+    <!-- Dr. Clayton Holdren -->
 
     <PawnKindDef ParentName="FCP_InstituteKindBase">
         <defName>FCP_Unique_Pawnkind_ClaytonHoldren</defName>
-        <label>Alan Binet</label>
+        <label>Dr. Clayton Holdren</label>
         <combatPower>50</combatPower>
         <maxGenerationAge>55</maxGenerationAge>
         <minGenerationAge>55</minGenerationAge>
         <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Division_Head_Coat_BioScience</li>
+        </apparelRequired>
         <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
@@ -120,15 +132,18 @@
         </backstoryFiltersOverride>
     </PawnKindDef>
 
-    <!-- Dr. Clayton Holdren -->
+    <!-- Alan Binet -->
 
     <PawnKindDef ParentName="FCP_InstituteKindBase">
         <defName>FCP_Unique_Pawnkind_AlanBinet</defName>
-        <label>Dr. Clayton Holdren</label>
+        <label>Alan Binet</label>
         <combatPower>50</combatPower>
         <maxGenerationAge>50</maxGenerationAge>
         <minGenerationAge>50</minGenerationAge>
         <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Division_Head_Coat_Robotics</li>
+        </apparelRequired>
         <weaponMoney>800~1000</weaponMoney>
         <backstoryFiltersOverride>
             <li>
@@ -137,6 +152,498 @@
                 </categoriesChildhood>
                 <categoriesAdulthood>
                     <li>FCP_Character_Backstory_AlanBinet_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Allie Filmore -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_AllieFilmore</defName>
+        <label>Allie Filmore</label>
+        <combatPower>50</combatPower>
+        <maxGenerationAge>54</maxGenerationAge>
+        <minGenerationAge>54</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Division_Head_Coat_Facilities</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_AllieFilmore_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Newton Oberly -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_NewtonOberly</defName>
+        <label>Newton Oberly</label>
+        <combatPower>35</combatPower>
+        <maxGenerationAge>62</maxGenerationAge>
+        <minGenerationAge>62</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_NewtonOberly_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Evan Watson -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_EvanWatson</defName>
+        <label>Evan Watson</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>44</maxGenerationAge>
+        <minGenerationAge>44</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Jumpsuit</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_EvanWatson_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Lawrence Higgs -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_LawrenceHiggs</defName>
+        <label>Lawrence Higgs</label>
+        <combatPower>45</combatPower>
+        <maxGenerationAge>41</maxGenerationAge>
+        <minGenerationAge>41</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_LawrenceHiggs_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Max Loken -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_MaxLoken</defName>
+        <label>Max Loken</label>
+        <combatPower>45</combatPower>
+        <maxGenerationAge>46</maxGenerationAge>
+        <minGenerationAge>46</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_MaxLoken_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Dean Volkert -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_DeanVolkert</defName>
+        <label>Dean Volkert</label>
+        <combatPower>35</combatPower>
+        <maxGenerationAge>63</maxGenerationAge>
+        <minGenerationAge>63</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_DeanVolkert_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Brendan Volkert -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_BrendanVolkert</defName>
+        <label>Brendan Volkert</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>29</maxGenerationAge>
+        <minGenerationAge>29</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_BrendanVolkert_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Isaac Karlin -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_IsaacKarlin</defName>
+        <label>Isaac Karlin</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>50</maxGenerationAge>
+        <minGenerationAge>50</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_IsaacKarlin_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Rosalind Orman -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_RosalindOrman</defName>
+        <label>Rosalind Orman</label>
+        <combatPower>35</combatPower>
+        <maxGenerationAge>47</maxGenerationAge>
+        <minGenerationAge>47</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_RosalindOrman_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Janet Thompson -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_JanetThompson</defName>
+        <label>Janet Thompson</label>
+        <combatPower>35</combatPower>
+        <maxGenerationAge>40</maxGenerationAge>
+        <minGenerationAge>40</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_JanetThompson_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Enrico Thompson -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_EnricoThompson</defName>
+        <label>Enrico Thompson</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>43</maxGenerationAge>
+        <minGenerationAge>43</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Jumpsuit</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_EnricoThompson_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Nathan Filmore -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_NathanFilmore</defName>
+        <label>Nathan Filmore</label>
+        <combatPower>35</combatPower>
+        <maxGenerationAge>31</maxGenerationAge>
+        <minGenerationAge>31</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_NathanFilmore_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Liam Binet -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_LiamBinet</defName>
+        <label>Liam Binet</label>
+        <combatPower>20</combatPower>
+        <maxGenerationAge>17</maxGenerationAge>
+        <minGenerationAge>17</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Jumpsuit</li>
+        </apparelRequired>
+        <weaponMoney>0~0</weaponMoney>
+        <forcedTraits Inherit="False" />
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_LiamBinet_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_LiamBinet_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Quentin Filmore -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_QuentinFilmore</defName>
+        <label>Quentin Filmore</label>
+        <combatPower>5</combatPower>
+        <maxGenerationAge>10</maxGenerationAge>
+        <minGenerationAge>10</minGenerationAge>
+        <apparelMoney>200~400</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <weaponMoney>0~0</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_QuentinFilmore_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_QuentinFilmore_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Alice Thompson -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_AliceThompson</defName>
+        <label>Alice Thompson</label>
+        <combatPower>5</combatPower>
+        <maxGenerationAge>9</maxGenerationAge>
+        <minGenerationAge>9</minGenerationAge>
+        <apparelMoney>200~400</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <weaponMoney>0~0</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_AliceThompson_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_AliceThompson_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Kellogg -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_Kellogg</defName>
+        <label>Kellogg</label>
+        <combatPower>160</combatPower>
+        <maxGenerationAge>56</maxGenerationAge>
+        <minGenerationAge>56</minGenerationAge>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <apparelMoney>700~1000</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>IndustrialBasic</li>
+            <li>IndustrialMilitaryBasic</li>
+        </apparelTags>
+        <weaponMoney>1000~1400</weaponMoney>
+        <weaponTags Inherit="False">
+            <li>FCP_Pistol</li>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <forcedTraits Inherit="False" />
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Kellogg_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Kellogg_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Shaun -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_SynthShaun</defName>
+        <label>Shaun</label>
+        <combatPower>5</combatPower>
+        <maxGenerationAge>10</maxGenerationAge>
+        <minGenerationAge>10</minGenerationAge>
+        <apparelMoney>200~400</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <weaponMoney>0~0</weaponMoney>
+        <forcedTraits Inherit="False" />
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_SynthShaun_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_SynthShaun_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Mayor McDonough -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_McDonough</defName>
+        <label>Mayor McDonough</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>46</maxGenerationAge>
+        <minGenerationAge>46</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelTags Inherit="False">
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <weaponMoney>300~500</weaponMoney>
+        <weaponTags Inherit="False">
+            <li>FCP_Pistol</li>
+        </weaponTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Synth</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_McDonough_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Doctor Zimmer -->
+
+    <PawnKindDef ParentName="FCP_InstituteKindBase">
+        <defName>FCP_Unique_Pawnkind_Zimmer</defName>
+        <label>Doctor Zimmer</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>66</maxGenerationAge>
+        <minGenerationAge>66</minGenerationAge>
+        <apparelMoney>600~900</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Institute_Lab_Coat</li>
+        </apparelRequired>
+        <weaponMoney>800~1000</weaponMoney>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Institute_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Zimmer_Adult</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>

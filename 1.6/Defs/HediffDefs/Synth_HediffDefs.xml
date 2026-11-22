@@ -15,9 +15,6 @@
         <initialSeverity>1</initialSeverity>
         <maxSeverity>1</maxSeverity>
         <comps>
-            <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
-                <texPath>FCP_Synth/GenI/Bodies/FCP_Synth_GenI_Chassis</texPath>
-            </li>
             <li Class="FCP.Core.Hediffs.HediffCompProperties_HiddenButcherYield">
                 <replacesNormalYield>true</replacesNormalYield>
                 <yield>
@@ -49,6 +46,38 @@
             </li>
         </stages>
         <comps>
+            <li Class="FCP.Core.Hediffs.HediffCompProperties_HiddenButcherYield">
+                <replacesNormalYield>false</replacesNormalYield>
+                <yield>
+                    <Steel>20</Steel>
+                    <ComponentIndustrial>15</ComponentIndustrial>
+                </yield>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!-- DiMA Prototype Frame -->
+
+    <HediffDef>
+        <defName>FCP_Hediff_Synth_DiMA_Frame</defName>
+        <label>prototype frame</label>
+        <description>One of the Institute's early prototype bodies. The synthetic skin never fully took over the frame, and the cooling lines and processor housing still show through it.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <stages>
+            <li>
+                <statFactors>
+                    <MeatAmount>0.5</MeatAmount>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
+                <texPath>FCP_Synth/GenII/Bodies/FCP_Synth_DiMA_Body</texPath>
+            </li>
             <li Class="FCP.Core.Hediffs.HediffCompProperties_HiddenButcherYield">
                 <replacesNormalYield>false</replacesNormalYield>
                 <yield>

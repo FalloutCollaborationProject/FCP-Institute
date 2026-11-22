@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Synth Apparel __________-->
+
+    <!-- Synth Uniform -->
+
+    <ThingDef ParentName="FCP_Apparel_Makeable_Base">
+        <defName>FCP_Apparel_Synth_Uniform</defName>
+        <label>synth uniform</label>
+        <description>A plain grey-white bodysuit with padded bands at the chest and waist, issued to every Gen 2 synth that leaves the assembly line.</description>
+        <thingCategories Inherit="False">
+            <li>FCP_Institute_Apparel</li>
+        </thingCategories>
+        <tradeTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <thingSetMakerTags Inherit="False" />
+        <recipeMaker IsNull="True" />
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Synth_Uniform/FCP_Synth_Uniform</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToMake>5000</WorkToMake>
+            <Mass>1.5</Mass>
+            <MarketValue>150</MarketValue>
+            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.10</ArmorRating_Heat>
+            <Insulation_Cold>4.0</Insulation_Cold>
+            <Insulation_Heat>2.0</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Synth_Uniform/FCP_Synth_Uniform</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>FCP_Institute_Synth_Apparel</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--_____ Synth Armor _____-->
+
+    <!-- Synth Armor Base -->
+
+    <ThingDef Name="FCP_Synth_Armor_Base" ParentName="FCP_Armor_Machineable_Base" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>FCP_Institute_Apparel</li>
+        </thingCategories>
+        <tradeTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <thingSetMakerTags Inherit="False" />
+        <recipeMaker IsNull="True" />
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>FCP_Institute_Synth_Apparel</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Light Synth Armor -->
+
+    <ThingDef ParentName="FCP_Synth_Armor_Base">
+        <defName>FCP_Apparel_Synth_Armor_Light</defName>
+        <label>light synth armor</label>
+        <description>Molded polymer plates over a thin carbon-weave harness, made for the synths the Institute sends topside on retrieval runs. It takes a bullet a little worse than combat armor of the same weight and shrugs off laser fire a good deal better.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Synth_Armor_Light/FCP_Synth_Armor_Light</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>230</MaxHitPoints>
+            <WorkToMake>9000</WorkToMake>
+            <Mass>4.0</Mass>
+            <MarketValue>380</MarketValue>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.55</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>5</Insulation_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Synth_Armor_Light/FCP_Synth_Armor_Light</wornGraphicPath>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Sturdy Synth Armor -->
+
+    <ThingDef ParentName="FCP_Synth_Armor_Base">
+        <defName>FCP_Apparel_Synth_Armor_Sturdy</defName>
+        <label>sturdy synth armor</label>
+        <description>Thicker synth plating with a reinforced chest plate and broader pauldrons. Standard kit for synth patrols guarding Institute interests on the surface.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Synth_Armor_Sturdy/FCP_Synth_Armor_Sturdy</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToMake>10500</WorkToMake>
+            <Mass>5.0</Mass>
+            <MarketValue>460</MarketValue>
+            <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.46</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+            <Insulation_Cold>7</Insulation_Cold>
+            <Insulation_Heat>5</Insulation_Heat>
+            <EquipDelay>1.4</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Synth_Armor_Sturdy/FCP_Synth_Armor_Sturdy</wornGraphicPath>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Heavy Synth Armor -->
+
+    <ThingDef ParentName="FCP_Synth_Armor_Base">
+        <defName>FCP_Apparel_Synth_Armor_Heavy</defName>
+        <label>heavy synth armor</label>
+        <description>The heaviest plating the Institute fits to its synths, with a raised gorget and layered shoulder guards. Issued to the units sent in when a retrieval is expected to turn into a firefight, and slow enough that a Gen 1 wearing it clanks.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Synth_Armor_Heavy/FCP_Synth_Armor_Heavy</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>280</MaxHitPoints>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>6.5</Mass>
+            <MarketValue>560</MarketValue>
+            <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.56</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.75</ArmorRating_Heat>
+            <Insulation_Cold>8</Insulation_Cold>
+            <Insulation_Heat>6</Insulation_Heat>
+            <EquipDelay>1.6</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Synth_Armor_Heavy/FCP_Synth_Armor_Heavy</wornGraphicPath>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--_____ Synth Helmets _____-->
+
+    <!-- Synth Helmet Base -->
+
+    <ThingDef Name="FCP_Synth_Helmet_Base" ParentName="FCP_Armor_Helmet_Makeable_Base" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>FCP_Institute_Apparel</li>
+        </thingCategories>
+        <tradeTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <thingSetMakerTags Inherit="False" />
+        <recipeMaker IsNull="True" />
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>FCP_Institute_Synth_Apparel</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Light Synth Helmet -->
+
+    <ThingDef ParentName="FCP_Synth_Helmet_Base">
+        <defName>FCP_Apparel_Synth_Helmet_Light</defName>
+        <label>light synth helmet</label>
+        <description>A smooth polymer shell that wraps the back and sides of a synth's head, leaving the optics clear.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Synth_Helmet_Light/FCP_Synth_Helmet_Light</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>0.7</Mass>
+            <MarketValue>130</MarketValue>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.40</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Synth_Helmet_Light/FCP_Synth_Helmet_Light</wornGraphicPath>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Sturdy Synth Helmet -->
+
+    <ThingDef ParentName="FCP_Synth_Helmet_Base">
+        <defName>FCP_Apparel_Synth_Helmet_Sturdy</defName>
+        <label>sturdy synth helmet</label>
+        <description>A thicker synth helmet with a sensor pod bolted over the left side for patrol work.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Synth_Helmet_Sturdy/FCP_Synth_Helmet_Sturdy</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <WorkToMake>3500</WorkToMake>
+            <Mass>0.9</Mass>
+            <MarketValue>160</MarketValue>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.48</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Synth_Helmet_Sturdy/FCP_Synth_Helmet_Sturdy</wornGraphicPath>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Heavy Synth Helmet -->
+
+    <ThingDef ParentName="FCP_Synth_Helmet_Base">
+        <defName>FCP_Apparel_Synth_Helmet_Heavy</defName>
+        <label>heavy synth helmet</label>
+        <description>The heaviest synth helmet, thick enough to turn a rifle round at range. Worn with heavy synth armor by the squads that go in first.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Institute_Apparel/Synth_Helmet_Heavy/FCP_Synth_Helmet_Heavy</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.1</Mass>
+            <MarketValue>190</MarketValue>
+            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.55</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/Institute_Apparel/Synth_Helmet_Heavy/FCP_Synth_Helmet_Heavy</wornGraphicPath>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

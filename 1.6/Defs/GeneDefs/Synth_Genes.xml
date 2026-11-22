@@ -9,6 +9,7 @@
         <defName>FCP_Gene_Synth_GenI_Head</defName>
         <label>gen 1 chassis</label>
         <description>A bare metal skull on a jointed frame. There is no skin to grow and nothing underneath to hide.</description>
+        <geneClass>FCP.Core.Synths.Gene_SynthBody</geneClass>
         <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>600</displayOrderInCategory>
@@ -24,10 +25,16 @@
                 <li>Bald</li>
             </tags>
         </hairTagFilter>
+        <skinColorOverride>(255, 255, 255)</skinColorOverride>
         <forcedHeadTypes>
             <li>FCP_Male_Synth_GenI_Head</li>
             <li>FCP_Female_Synth_GenI_Head</li>
         </forcedHeadTypes>
+        <modExtensions>
+            <li Class="FCP.Core.Synths.SynthBodyExtension">
+                <bodyTexPath>FCP_Synth/GenI/Bodies</bodyTexPath>
+            </li>
+        </modExtensions>
     </GeneDef>
 
     <!--__________ Gen II Synth Genes __________-->
@@ -48,9 +55,7 @@
         </exclusionTags>
         <forcedHeadTypes>
             <li>FCP_Male_Synth_GenII_Head_Average</li>
-            <li>FCP_Male_Synth_GenII_Head_Narrow</li>
             <li>FCP_Female_Synth_GenII_Head_Average</li>
-            <li>FCP_Female_Synth_GenII_Head_Narrow</li>
         </forcedHeadTypes>
     </GeneDef>
 
