@@ -2,7 +2,7 @@
 
 ## Acknowledgements
 - RickGrymes / Ranger Rick - Project Lead / XML
-- SirLalaPyon, DanDman, RickGrymes / Ranger Rick - Art
+- DanDman, RickGrymes / Ranger Rick - Art
 - Penumbra, RickGrymes / Ranger Rick - Writing
 
 ## Notice
